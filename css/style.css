@@ -1,0 +1,138 @@
+:root {
+    --corPrincipal: #131313;
+    --corSecundaria: #E48A0F;
+    --corNeutra: #242424;
+    --corBranca: #fafafa;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: var(--corNeutra);
+}
+
+.menu-barra-lateral {
+    width: 256px;
+    height: 100vh;
+    background-color: var(--corPrincipal);
+    float: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p {
+    color: var(--corBranca);
+}
+
+.banner {
+    background: url('../img/back-capa.JPEG') no-repeat #242424;
+    height: 405px;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 7.5rem;
+}
+
+#meu-nome {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 120px;
+    line-height: 139px;
+    text-align: center;
+    letter-spacing: 0.215em;
+}
+
+#botao {
+    border-radius: 8px;
+    padding: 12px 72px 12px 72px;
+    color: #E48A0F;
+    background-color: var(--corPrincipal);
+    cursor: pointer;
+    position: absolute;
+    left: 673px;
+    top: 320px;
+}
+
+#botao:hover {
+    box-shadow: 0px 0px 24px 0px var(--corSecundaria);
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+    position: absolute;
+    width: 320px;
+    height: 276px;
+    left: 23px;
+    top: 206px;
+}
+
+.menu ul {
+    width: 100%;
+
+}
+
+.menu li {
+    visibility: hidden;
+    width: 100%;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding: 10px;
+    gap: 16px;
+    color: #fafafa;
+    width: 153px;
+    height: 54px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.icon {
+    visibility: visible !important;
+    display: grid;
+    position: relative;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    color: var(--corNeutra)
+} 
+
+.menu a{
+    color: var(--corBranca);
+    font-size: 1.2rem; 
+}
+
+.menu li:hover{
+    color: rgb(219, 219, 219); 
+    visibility: visible !important;
+    background-color: #616161;
+    border-radius: 1000px 10px 10px 1000px;
+}
+
+.imga{
+    margin: auto;
+    margin-top: 10px;
+    width: 150px;
+    height: 150px;
+    background-color: #616161;
+    border-radius: 150px;
+}
