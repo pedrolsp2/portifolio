@@ -147,6 +147,25 @@ body {
     color: #02325A;
 }
 
+@media screen and (max-width: 498px) {
+    .card{
+        width: 376px;
+    }
+    .detalhe-card{
+        width: 376px;
+    }
+    .fita-card{
+        height: 180px;
+    }
+    .furo-card{
+        position: absolute;
+        width: 92px;
+        height: 8.06px;
+        top: 21%;
+        left: 50%;
+    }
+}
+
 h1,
 h2,
 h3,
