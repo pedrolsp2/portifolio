@@ -163,28 +163,6 @@ body {
     color: var(--corTres);
 }
 
-@media screen and (max-width: 498px) {
-    .card {
-        width: 376px;
-    }
-
-    .detalhe-card {
-        width: 376px;
-    }
-
-    .fita-card {
-        height: 180px;
-    }
-
-    .furo-card {
-        position: absolute;
-        width: 92px;
-        height: 8.06px;
-        top: 21%;
-        left: 50%;
-    }
-}
-
 h1,
 h2,
 h3,
@@ -251,14 +229,16 @@ ul span {
 #portifolio {
     margin: 50px 0px 50px 0px;
 }
-
-.conteudo {   
-    position: absolute;
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+.conteudo {    
+    margin: auto;
     width: 828px;
-    height: 440px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    height: 440px;  
 }
 
 .meu-perfil,
@@ -268,9 +248,9 @@ ul span {
     position: absolute;
     width: 300px;
     height: 300px;
-    border-radius: 100%; 
     float: left;
-    clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%); 
+    margin: auto;
 }
 
 .meu-perfil{ 
@@ -336,4 +316,26 @@ gap: 0.953rem;
 
 .icons-index i {
     cursor: pointer;
+} 
+
+@media screen and (max-width: 498px) {
+    .card {
+        width: 376px;
+    }
+
+    .detalhe-card {
+        width: 376px;
+    }
+
+    .fita-card {
+        height: 180px;
+    }
+
+    .furo-card {
+        position: absolute;
+        width: 92px;
+        height: 8.06px;
+        top: 21%;
+        left: 50%;
+    }
 }
