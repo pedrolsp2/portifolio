@@ -177,9 +177,9 @@ p {
 .efeito1,
 .efeito2 {
     background: var(--corSecundaria);
-    position: absolute;
-    width: 232px;
-    height: 232px;
+    position: fixed;
+    width: 14.5rem;
+    height: 14.5rem;
     border-radius: 100%;
 }
 
@@ -196,28 +196,22 @@ p {
 }
 
 .menu {
-    width: 102px;
-    height: 100vh;
-    background-color: var(--corSecundaria);
+    height: 70px;
+    width: 100%; 
     display: flex;
     justify-content: center;
     align-items: center;
     float: left;
-}
-
-.logo img {
-    position: absolute;
-    top: 0%;
-    left: .5%;
-    width: 84px;
-    height: 84px;
-    margin: auto;
-}
+    box-shadow: 0px 1px 1px rgba(144, 8, 31, 0.199);
+} 
 
 ul,
 li {
+    display: flex;
     text-decoration: none;
     list-style: none;
+    justify-content: center;
+    gap: 2.504rem;
 }
 
 ul span {
@@ -236,9 +230,13 @@ main{
     flex-wrap: wrap; 
 }
 .conteudo {    
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     margin: auto;
-    width: 828px;
-    height: 440px;  
+    width: 51.75rem;
+    height: 27.5rem;  
 }
 
 .meu-perfil,
@@ -246,8 +244,8 @@ main{
 .detalhe2 {
     padding: 0px !important;
     position: absolute;
-    width: 300px;
-    height: 300px;
+    width: 18.75rem;
+    height: 18.75rem;
     float: left;
     clip-path: circle(50% at 50% 50%); 
     margin: auto;
@@ -298,6 +296,7 @@ gap: 0.953rem;
 }
 
 .textos h5{
+    font-weight: normal;
     font-size: 1.75rem;
     color: var(--corSubTextos);
 }
