@@ -1,0 +1,534 @@
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+main {
+    padding: 0px 20px;
+}
+
+#header,
+#btn-celular,
+.logo,
+.nav {
+    visibility: hidden;
+    position: absolute;
+}
+
+.second-nave {
+    width: 100%;
+    height: 180px;
+    position: fixed;
+    bottom: 0;
+    box-shadow: -3px 4px 7px #000000;
+    visibility: visible;
+    z-index: 1000;
+}
+
+.second-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    background-color: #085e3b;
+}
+
+.second-item,
+#icon-menu-inferior {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #085e3b;
+    text-decoration: none;
+    font-size: 65px;
+    color: #fff;
+}
+
+.second-item img {
+    width: 150px;
+}
+
+#second-logo {
+    position: absolute;
+    left: 40%;
+    background-color: var(--corPrincipal);
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 200px;
+    margin-top: -40px;
+    z-index: 3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.left {
+    border-top-left-radius: 20px;
+}
+
+.rigth {
+    border-top-right-radius: 20px;
+}
+
+.ativo {
+    background-color: #04472c;
+    height: 195px;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 5px 5px 4px 4px rgba(0, 0, 0, 0.459);
+}
+
+#bem-vindo {
+    padding: 52px;
+    width: 650px;
+}
+
+main h2 {
+    color: var(--corPrincipal);
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+main p {
+    padding: 10px;
+    font-size: 2rem;
+}
+
+main li {
+    margin-left: 80px;
+    padding-bottom: 9px;
+    font-size: 2rem;
+}
+
+main h4 {
+    color: var(--corPrincipal);
+    font-size: 2rem;
+}
+
+.container {
+    display: block;
+}
+
+.bloco {
+    height: 550px;
+    background-color: #085e3cb4;
+    display: inline;
+    margin: 7px;
+    position: relative;
+    float: left;
+    align-items: center;
+    color: white;
+    border-radius: 26px;
+    -webkit-box-shadow: 8px 2px 19px -2px rgba(1, 46, 28, 0.46);
+    -moz-box-shadow: 8px 2px 19px -2px rgba(1, 46, 28, 0.46);
+    box-shadow: 8px 2px 19px -2px rgba(1, 46, 28, 0.46);
+}
+
+#iconblock {
+    font-size: 4rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+}
+
+#bloco {
+    margin-top: 10px;
+    font-size: 2rem;
+}
+
+#blocktitle {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.barra {
+    max-width: 1200px;
+    min-width: 1024px;
+    box-sizing: border-box;
+    height: 100%;
+    display: block;
+    flex-wrap: wrap;
+    background: linear-gradient(90deg, rgba(3, 68, 41, 1) 0%, rgba(8, 94, 59, 1) 58%, rgba(11, 121, 76, 1) 90%);
+    margin: 50px 0px;
+}
+
+.quadrado {
+    color: white;
+    align-items: center;
+}
+
+.quadrado h4 {
+    font-size: 3rem;
+    margin-top: 50px;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+}
+
+.quadrado h5 {
+    font-size: 2rem;
+    text-align: center;
+    padding-top: -10px;
+    padding-bottom: 30px;
+    color: #fff;
+}
+
+#imgquadrado {
+    border-radius: 30px;
+    width: 90%;
+    display: block;
+    margin: 0px auto;
+    margin-bottom: 5px;
+
+}
+
+#imgquadrado2 {
+    border-radius: 30px;
+    width: 85%;
+    display: block;
+    margin: 0px auto;
+    margin-bottom: 5px;
+
+}
+
+.principal {
+    display: block;
+}
+
+.footer {
+    max-width: 1200px;
+    min-width: 1024px;
+    display: block;
+    padding-bottom: 250px;
+}
+
+.footerSobre {
+    padding: 50px 10px 20px 10px;
+}
+
+.footer h3 {
+    font-size: 2.5rem;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-bottom: 30px;
+    color: white;
+}
+
+.footer hr {
+    opacity: 0;
+}
+
+#pfooter {
+    display: inline;
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+#iconfooter {
+    color: #fff;
+    margin: 0px 5px 0px 15px;
+}
+
+.footer p,
+.footer a {
+    font-size: 2rem;
+}
+
+.area-form {
+    display: block;
+}
+
+#slogan {
+    margin-bottom: 15px;
+}
+
+.nv-partida {
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    background-color: #cbd1cf50;
+    border-radius: 50px;
+    margin-bottom: 50px;
+}
+
+.nv-partida h4 {
+    color: var(--corPrincipal);
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 0px;
+}
+
+.nv-partida h6 {
+    color: var(--corPrincipal);
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+#NumeroJogadores {
+    width: 15%;
+    height: 100%;
+    border-radius: 15%;
+    position: relative;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    display: inline;
+    margin-right: 5px;
+}
+
+#cx-input {
+    width: 80%;
+    height: 100px;
+    border: solid 2.8px;
+    border-radius: 10px;
+    border-color: #fff;
+    background-color: #ffffff00;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    border-style: inset;
+    padding: 0;
+}
+
+#cx-input {
+    font-size: 3.2rem;
+    color: #756767c2;
+    ;
+}
+
+input,select {
+    width: 80%;
+    height: 100px;
+    border-radius: 10px;
+    border-color: #fff;
+    background-color: #ffffff00;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    font-size: 3.2rem;
+    text-align: center;
+    backdrop-filter: blur(9.2px);
+    -webkit-backdrop-filter: blur(9.2px);
+}
+
+
+input::placeholder {
+    font-size: 3.2rem;
+    color: #756767c2;
+    ;
+}
+
+input:focus {
+    border-color: #077e4e;
+}
+
+input:target {
+    color: var(--corPrincipal);
+    background-color: #048b55;
+}
+
+button {
+    width: 80%;
+    height: 100px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.185);
+    padding: 10px 30px;
+    color: var(--corPrincipal);
+    font-size: 3rem;
+    font-weight: bold;
+    border-color: white;
+    border-radius: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.4rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #077e4e;
+    color: #fff
+}
+
+
+.alert {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.btn-fecha {
+    font-size: 5.5rem;
+}
+
+.alert .inner {
+    padding-top: 50px;
+    display: block;
+    padding: 50px;
+    margin: 6px;
+    margin: auto;
+    border-radius: 3px;
+    border: 1px solid rgb(180, 180, 180);
+    background-color: rgb(212, 212, 212);
+    height: 50vh;
+    width: 250vw;
+    font-size: 3.5rem;
+    line-height: 55px;
+}
+
+.alert .close {
+    float: right;
+    margin: 3px 12px 0px 0px;
+    cursor: pointer;
+}
+
+.alert .inner,
+.alert .close {
+    color: rgb(88, 88, 88);
+}
+
+.alert input {
+    display: none;
+}
+
+.alert input:checked~* {
+    animation-name: dismiss, hide;
+    animation-duration: 300ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-delay: 0s, 100ms;
+}
+
+.alert.error .inner {
+    border: 1px solid rgb(238, 211, 215);
+    background-color: rgb(242, 222, 222);
+}
+
+.alert.error .inner,
+.alert.error .close {
+    color: rgb(185, 74, 72);
+}
+
+.alert.success .inner {
+    border: 1px solid rgb(214, 233, 198);
+    background-color: rgb(223, 240, 216);
+}
+
+.alert.success .inner,
+.alert.success .close {
+    color: rgb(70, 136, 71);
+}
+
+.alert.info .inner {
+    border: 1px solid rgb(188, 232, 241);
+    background-color: rgb(217, 237, 247);
+}
+
+.alert.info .inner,
+.alert.info .close {
+    color: rgb(58, 135, 173);
+}
+
+.alert.warning .inner {
+    border: 1px solid rgb(251, 238, 213);
+    background-color: rgb(252, 248, 227);
+}
+
+.alert.warning .inner,
+.alert.warning .close {
+    color: rgb(192, 152, 83);
+}
+
+.area-quadra {
+    background-color: rgba(199, 199, 199, 0.24);
+    border-radius: 50px;
+    margin: 20px 0px;
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .conteudo-quadra {
+    width: 90%;
+    height: 90%;
+    border-radius: 80px;
+    background-color: rgba(216, 216, 216, 0.932);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    box-shadow: 7px 16px 15px 4px rgba(0, 0, 0, 0.322);
+  }
+  .horarios {
+    text-align: center;
+    line-height: 90px;
+    width: 90%;
+    height: 90px;
+    font-size: 6rem;
+    font-weight: bold;
+    color: var(--corPrincipal);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+  }
+  
+.quadra01 img{
+    visibility: hidden;
+    display: none;
+}
+
+#status{
+    font-size: 9rem;
+}
+
+  .conteudo-quadra h3 {
+    margin-top: 50px;
+    text-align: center;
+    color: var(--corPrincipal);
+    font-size: 4.5rem;
+  }
+ 
+  .jogo-indisponivel{
+    position: absolute !important;
+    top: -500px !important;
+    left: -100px !important;  
+  }
+
+  .partida-indisponivel{
+    position: absolute !important;
+    top: -300px !important;
+    left: 70px;  
+  } 
+ 
+  .jogos-indisponivel{
+    position: absolute !important;
+    top: -50px !important;
+    left: 120px;  
+    font-size: 5rem !important;
+  } 
+ 
+ 
+  #hr-indisponivel{
+    position: absolute !important;
+    top: 300px !important;
+    left: -20px;  
+    font-size: 7rem !important;
+    color: red;
+  } 
+ 

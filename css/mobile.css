@@ -2,17 +2,32 @@
 .conteudo {  
     margin: auto;
     height: 27.5rem;
-    width: 100% !important; 
+    width: 100% !important;
 }
 
 .textos {
     padding: 0.438rem;
     display: flex;  
     height: 17.595rem;
-    margin-left: 0rem !important;
-    gap: 0.953rem; 
+    margin-left: 0rem !important; 
     width: 100% !important;
-    margin: 150px;
+    margin: 9.375rem;
+}
+
+.icons-index {
+    padding: 25% 0rem 0rem 0% !important;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    color: var(--corBranco);
+}
+
+
+.textos h5{
+   margin-top: 1rem !important;
 }
 
 .textos h3{
@@ -42,21 +57,30 @@
 main{ 
     margin: calc(100vh + 5px) 7px !important;
 }
+
+main h1{
+    font-size: 2.1rem;
+}
  
+main h4{
+    font-size: 1.2rem;
+}
 main p{   
     text-align: justify !important;
+    font-size: 1.2rem;
 }
 
 .container, .item{
     display: block !important;
-    background-color: azure;
 }
 
 .container{
+    margin: 0;
     justify-content: center;
     align-items: center;
 }
 .item{
-
+    margin: 0;
+    width: 70% !important; 
 }
 
