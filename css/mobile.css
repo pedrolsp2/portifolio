@@ -1,0 +1,62 @@
+
+.conteudo {  
+    margin: auto;
+    height: 27.5rem;
+    width: 100% !important; 
+}
+
+.textos {
+    padding: 0.438rem;
+    display: flex;  
+    height: 17.595rem;
+    margin-left: 0rem !important;
+    gap: 0.953rem; 
+    width: 100% !important;
+    margin: 150px;
+}
+
+.textos h3{
+    margin: 0 !important;
+}
+
+.meu-perfil,
+.detalhe1,
+.detalhe2 {
+    padding: 0px !important;
+    position: absolute;
+    top: -40%;
+    left: 10%;
+    width: 18.75rem;
+    height: 18.75rem;
+    float: leff;
+    clip-path: circle(50% at 50% 50%);
+    margin: auto;
+}
+
+.meu-perfil {
+    z-index: 4;
+    background: radial-gradient(50% 50% at 50% 50%, #02325A 0%, #7D071A 100%);
+    transition: 200ms ease-out;
+}
+
+main{ 
+    margin: calc(100vh + 5px) 7px !important;
+}
+ 
+main p{   
+    text-align: justify !important;
+}
+
+.container, .item{
+    display: block !important;
+    background-color: azure;
+}
+
+.container{
+    justify-content: center;
+    align-items: center;
+}
+.item{
+
+}
+
