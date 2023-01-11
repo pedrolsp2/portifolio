@@ -1,8 +1,9 @@
 
 .conteudo {  
-    margin: auto;
+    margin-top: 5rem !important;
+    margin:  auto;
     height: 27.5rem;
-    width: 100% !important;
+    width: 100% !important; 
 }
 
 .textos {
@@ -15,7 +16,7 @@
 }
 
 .icons-index {
-    padding: 25% 0rem 0rem 0% !important;
+    padding: 12% 0rem 0rem 0% !important;
     font-size: 2rem;
     display: flex;
     justify-content: space-evenly;
@@ -39,7 +40,7 @@
 .detalhe2 {
     padding: 0px !important;
     position: absolute;
-    top: -40%;
+    top: calc(-59% + 70px);
     left: 10%;
     width: 18.75rem;
     height: 18.75rem;
