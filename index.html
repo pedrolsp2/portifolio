@@ -12,18 +12,25 @@
 <body>
     <div class="efeito1"></div>
     <div class="efeito2"></div>
-    <div class="menu">
+    <div class="menu"  id="topo">
         <ul>
             <li>
-                <img src="img/icon-sobre.svg" alt="Sobre mim">
+                <img src="img/icon-habilidades.svg" alt="Habilidades"> 
+                <a href="#Habilidades">Habilidades</a>
+            </li>
+            <li>
+                <img src="img/icon-sobre.svg" alt="Sobre mim"> 
+                <a href="#SobreMim">Sobre Mim</a>
             </li>
 
             <li>
-                <img src="img/icon-repositorio.svg" alt="Sobre mim">
+                <img src="img/icon-repositorio.svg" alt="Projetos">
+                <a href="#Projetos">Projetos</a>
             </li>
 
             <li>
-                <img src="img/icon-contato.svg" alt="Sobre mim">
+                <img src="img/icon-contato.svg" alt="Contato">
+                <a href="#Contato">Contato</a>
             </li>
 
         </ul>
@@ -50,7 +57,7 @@
 
     <main>
 
-        <h1>Habilidades</h1>
+        <h1><a id="Habilidades"></a>Habilidades</h1>
         <h4 id="sub-titulo">O que eu faço/fiz?</h4>
         <p>Abaixo, algumas habilidades desenvolvidas através de cursos on-line, aulas da faculdade, fóruns de pesquisa,
             projetos de extensão, entre outros. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus,
@@ -75,7 +82,7 @@
 
         </div>
 
-        <h1>Sobre mim</h1>
+        <h1 id="SobreMim">Sobre mim</h1>
         <h4 id="sub-titulo">Saiba um pouco sobre mim</h4>
         <div class="sobre">
             <div class="foto-sobre"></div>
@@ -94,7 +101,7 @@
             </div>
         </div>
 
-        <h1>Projetos executados</h1>
+        <h1 id="Projetos">Projetos executados</h1>
         <h4 id="sub-titulo">Veja alguns projetos os quais executei</h4>
         <div class="container">
             <div class="fileira">
@@ -115,9 +122,13 @@
         </div>
 
         </div>
-    </main>
-
-    <footer>
+    </main> 
+    <div class="ir-topo">
+        
+       <a href="#"><img src="img/icon-topo.svg" alt="Topo" id="ir-para-topo" class="top"></a>
+        <label>Ir para o topo</label>
+    </div>
+    <footer id="Contato">
         <div class="bloco">
             <img src="img/logo.svg" alt="Logo">
         </div>
@@ -129,10 +140,10 @@
 
         <div class="bloco">
             <h2>Links</h2>
-            <h3>Home</h3>
-            <h3>Habilidades</h3>
-            <h3>Sobre</h3>
-            <h3>Projetos</h3>
+            <h3><a href="#">Home</a></h3>
+            <h3><a href="#Habilidades">Habilidades</a></h3>
+            <h3><a href="#SobreMim">Sobre</a></h3>
+            <h3><a href="#Projetos">Projetos</a></h3>
         </div>
 
         <div class="bloco">
@@ -140,7 +151,7 @@
         </div>
     </footer>
 
-    <script class="hide" src="js/all.min.js"></script>
+    <script class="hide" src="js/all.min.js"></script>   
 </body>
 
 </html>

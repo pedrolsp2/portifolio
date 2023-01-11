@@ -7,12 +7,31 @@
     --corSubTextos: #a0A0A0;
 }
 
-.material-symbols-outlined {
-    font-variation-settings:
-        'FILL' 0,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 48
+.ir-topo{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    visibility: hidden;
+}
+
+.ir-topo:hover{
+    visibility: visible;
+}
+
+.ir-topo label{
+    color: var(--corSecundaria);
+    text-shadow: 0px 0px 10px var(--corTres);
+    position: relative;
+    bottom: 65px;
+    font-size: .8rem;
+}
+
+#ir-para-topo{
+    visibility: visible !important;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
 }
 
 * {
@@ -20,6 +39,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -71,6 +91,10 @@ p {
     box-shadow: 0px 1px 1px rgba(144, 8, 31, 0.199);
 }
 
+.menu img{
+    visibility: visible !important;
+}
+
 .menu ul,
 li {
     display: flex;
@@ -78,13 +102,46 @@ li {
     list-style: none;
     justify-content: center;
     gap: 2.504rem;
+    visibility: hidden;
+} 
+ 
+li:hover{
+    visibility: visible;
+    transition: 100ms ease-in;
+}
+.menu a{  
+    display: flex;
+    position: absolute;
+    bottom: -25px;
+    color: var(--corBranco);
+    background-color: var(--corNeutra); 
+    padding: 5px 15px;
+    border-radius: 20px; 
+    box-shadow: 4px 4px 4px var(--corTres);
+    list-style: none;
+    text-decoration: none;
+    transition: 100ms ease-in;
 }
 
-.menu ul span {
-    color: var(--corBranco);
-    font-size: 3rem !important;
-    cursor: pointer;
+.menu a::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-color: var(--corNeutra) transparent;
+    border-width: 0 15px 09px;
+    top: -9px;
+    left: 60%;
+    margin-left: -25px;
 }
+
+.menu a:hover{
+    color: var(--corSecundaria);
+    font-size: 1.1rem;
+}
+ 
 
 #portifolio {
     margin: 50px 0px 50px 0px;
@@ -274,10 +331,6 @@ main p {
     flex-grow: 0;
 }
 
-.conteudo-sobre{
-
-}
-
 .projeto{
     width: 16rem !important;
     height: 14rem !important;
@@ -295,10 +348,11 @@ footer{
 }
 
 .bloco{   
-    display: flex;
+    display: block;
     justify-content: center; 
     width: 25%;
     height: 100%;
+    padding: 15px 25px;
 }
 
 .bloco img{ 
@@ -307,8 +361,18 @@ footer{
 
 .bloco h2,h3{
     display: block;
+    text-align: center;
+    margin: 10%;
+}
+
+.bloco h3{
+    color: var(--corSubTextos);
+    font-size: 1rem;
+    font-weight: normal;
+    cursor: pointer;
 }
  
 @media screen and (max-width: 768px) {}
 
 @media screen and (max-width: 498px) {}
+ 
