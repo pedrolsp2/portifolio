@@ -68,7 +68,7 @@
   }
   
   .subir{
-    transform: translateY(-550%) !important;
+    transform: translateY(-250%) !important;
     top: 15% !important; 
     transition: 500ms ease-in !important;
   }
