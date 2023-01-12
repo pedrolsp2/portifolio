@@ -52,8 +52,19 @@
       padding: 0;
     }
   }
-  @media screen and (min-width: 480px) {
-
+  @media screen and (max-width: 480px) {
+    .bt2{
+      display: none;
+      visibility: hidden;
+    }
+    .bt{ 
+      display: block !important;
+      visibility: visible !important; 
+    }
+  }
+  .bt{
+    display: none;
+    visibility: hidden;
   }
   
   .subir{
