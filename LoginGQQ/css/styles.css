@@ -52,7 +52,16 @@
       padding: 0;
     }
   }
+  @media screen and (min-width: 480px) {
+
+  }
   
+  .subir{
+    transform: translateY(-550%) !important;
+    top: 15% !important; 
+    transition: 500ms ease-in !important;
+  }
+
   .login {
     position: fixed;
     z-index: 3;
@@ -148,11 +157,12 @@
   
   .login-form button {
     cursor: pointer;
-    background: #006e0f;
-    color: #f9f9f9;
+    background: #006e0f !important;
+    color: #f9f9f9 !important;
     border: 0;
     font-weight: 600;
     letter-spacing: 2px;
+  transition: 300ms ease-in !important;
   }
   
   .login-form button:hover {
