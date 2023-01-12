@@ -13,83 +13,88 @@
 <body>
     <div id="politica" class="politica slide-in-blurred-bottom ">
         <button class="close" onclick="Sumir()">✖</button>
-        
+
         <h1>Politica de privacidade</h1>
-        <h5>O GQQ respeita a sua privacidade em relação a qualquer informação sua que possamos tratar no nosso site ou em quaisquer outros ambientes que possuímos e operamos.</h5>
-  
-          <hr>
-  
-        <h5>Solicitamos seus dados pessoais apenas quando realmente necessários e na quantidade mínima possível para lhe fornecer serviços específicos – a isso chamamos “coleta mínima”. Sendo assim, o fazemos por meios transparentes, lícitos, seguros e, sempre que necessário, com o seu consentimento livre e informado. Esteja ciente de que também informamos o motivo de coletarmos seus dados pessoais e como serão usados.</h5>
-  
+        <h5>O GQQ respeita a sua privacidade em relação a qualquer informação sua que possamos tratar no nosso site ou
+            em quaisquer outros ambientes que possuímos e operamos.</h5>
+
+        <hr>
+
+        <h5>Solicitamos seus dados pessoais apenas quando realmente necessários e na quantidade mínima possível para lhe
+            fornecer serviços específicos – a isso chamamos “coleta mínima”. Sendo assim, o fazemos por meios
+            transparentes, lícitos, seguros e, sempre que necessário, com o seu consentimento livre e informado. Esteja
+            ciente de que também informamos o motivo de coletarmos seus dados pessoais e como serão usados.</h5>
+
         <form class="checar">
             <label for="aceito1">
                 <input type="checkbox" id="aceito1">Li e aceito Termos e Condições
             </label>
-  
+
             <label for="aceito2">
                 <input type="checkbox" id="aceito2">Li e aceito os Termos e Política de Dados
             </label>
-  
+
             <p id="menssagem-alerta" class="hide">Aceite os termos!</p>
             <a id="saiba" href="https://policies.google.com/privacy?hl=pt-BR" target="_blank">Saber Mais</a>
         </form>
-  
+
         <div id="botoes">
             <button onclick="Esconder()">Aceito</button>
         </div>
-  
+
     </div>
-            $(if chap-id)
-            <form name="sendin" action="$(link-login-only)" method="post" style="display:none">
-                <input type="hidden" name="username" />
-                <input type="hidden" name="password" />
-                <input type="hidden" name="dst" value="$(link-orig)" />
-                <input type="hidden" name="popup" value="true" />
-            </form>
+    $(if chap-id)
+    <form name="sendin" action="$(link-login-only)" method="post" style="display:none">
+        <input type="hidden" name="username" />
+        <input type="hidden" name="password" />
+        <input type="hidden" name="dst" value="$(link-orig)" />
+        <input type="hidden" name="popup" value="true" />
+    </form>
 
-            <script src="/md5.js"></script>
-            <script>
-                function doLogin() {
-                    document.sendin.username.value = document.login.username.value;
-                    document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
-                    document.sendin.submit();
-                    return false;
-                }
+    <script src="/md5.js"></script>
+    <script>
+        function doLogin() {
+            document.sendin.username.value = document.login.username.value;
+            document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+            document.sendin.submit();
+            return false;
+        }
 
-            </script>
-            $(endif)
-            <div class="login">
-                <div class="avatar">
-                    <img src="avatar.png" />
-                  </div>
-                  <h2>Login</h2>
-                  <h3><a id="alerta">Atenção!</a> Esta é uma rede privada do Grupo Queiroz de Queiroz</h3>
-                        <form class="login-form" name="login" action="$(link-login-only)" method="post" $(if chap-id)
-                            onSubmit="return doLogin()" $(endif)>
-                            <input type="hidden" name="dst" value="$(link-orig)" />
-                            <input type="hidden" name="popup" value="true" />
-                    <div class="textbox">
-                        <input name="username" type="text" value="$(username)" placeholder="Usuário"/>
-                        <img src="user.svg" id="efeito-input">
-                      </div>
-
-                      <div class="textbox">
-                        <input name="password" type="password" placeholder="Senha" />
-                        <img src="password.svg" id="efeito-input">
-                      </div>
-                      
-                            <button type="submit" value="Conectar" id="botao">Conectar</button>
-                        </form>
+    </script>
+    $(endif)
+    <div class="login">
+        <div class="avatar">
+            <img src="avatar.png" />
+        </div>
+        <h2>Login</h2>
+        <h3><a id="alerta">Atenção!</a> Esta é uma rede privada do Grupo Queiroz de Queiroz</h3>
+        <form class="login-form" name="login" action="$(link-login-only)" method="post" $(if chap-id)
+            onSubmit="return doLogin()" $(endif)>
+            <input type="hidden" name="dst" value="$(link-orig)" />
+            <input type="hidden" name="popup" value="true" />
+            <div class="textbox">
+                <input name="username" type="text" value="$(username)" placeholder="Usuário" />
+                <img src="user.svg" id="efeito-input">
             </div>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                    <p class="info $(if error)alert$(endif)">
-                        $(if error == "")Faça o login para ter acesso! $(if trial == 'yes')<br />Saiba mais <a href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)">clicando aqui</a>.$(endif)
-                        $(endif)
 
-                        $(if error)$(error)$(endif)
+            <div class="textbox">
+                <input name="password" type="password" placeholder="Senha" id="senha" />
+                <img src="password.svg" id="efeito-input">
+            </div>
+
+            <button class="bt" type="submit" id="submit" value="Conectar" id="botao">Conectar</button>
+        </form>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <p class="info $(if error)alert$(endif)">
+        $(if error == "")Faça o login para ter acesso! $(if trial == 'yes')<br />Saiba mais <a
+            href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)">clicando aqui</a>.$(endif)
+        $(endif)
+
+        $(if error)$(error)$(endif)
 
 
-                        <script src="script.js"></script>
+        <script src="script.js"></script> 
 </body>
 
 </html>
