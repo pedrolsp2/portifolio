@@ -88,3 +88,47 @@ main p{
 .projeto{ 
     margin-top: 7rem !important;
 } 
+
+main{
+    margin-bottom: 1rem !important;
+}
+
+.main{
+    margin-top: 0rem !important;
+}
+
+.divisoria{
+    padding: 1rem !important;
+}
+.divisoria ul, li{
+    color: var(--corBranco);
+}
+
+.cursos{
+    padding: 0.1rem !important;
+}
+
+.cursos h4{
+    padding-bottom: .2rem;
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+
+.conteudo-sobre p{
+    font-size: 1.3rem !important;
+    text-align: justify;
+}
+
+.conteudo-sobre{
+    text-align: left !important;
+    padding: 1rem 0rem !important;
+    flex: 1 1 350px;
+}
+
+footer{
+margin: 2rem 0px !important;
+}
+
+.bloco{
+    margin: -1rem !important; 
+}
