@@ -65,6 +65,7 @@ p {
     width: 14.5rem;
     height: 14.5rem;
     border-radius: 100%;
+    z-index: -1;
 }
 
 .efeito1 {
@@ -280,6 +281,10 @@ main p {
     flex: 1 1 12.5rem;
 } 
 
+.main{
+    margin-top: 6rem !important;
+}
+
 .item p{
     color: transparent;
     text-align: left;
@@ -307,15 +312,48 @@ main p {
 
 .sobre {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;  
 }
 
+.divisoria{ 
+    background-color: var(--corNeutra);
+    padding: 2rem 3rem;
+}
+
+
 .foto-sobre {  
-    height: 27rem;
+    height: 20rem;
     background: var(--corPrincipal);
     box-shadow: 0px 1px 4px #90081E, 0px 1px 2px rgba(255, 255, 255, 0.25);
     border-radius: 20px;
     flex: 1 1 250px;
+    transition: 400ms;
+}
+
+.foto-sobre img{
+    height: 20rem;
+width: 100%;
+border-radius: 21px;
+transition: 400ms;
+}
+
+.foto-sobre:hover{
+    transform: scale(105%);
+    box-shadow: 0px 1px 40px #90081E, 0px 1px 20px rgba(255, 255, 255, 0.25);
+    transition: 400ms;
+}
+
+.divisoria ul, li{
+    color: var(--corBranco);
+}
+
+.cursos{
+    padding: 1rem;
+}
+
+.cursos h4{
+    padding-bottom: .2rem;
+    font-weight: normal;
 }
 
 .conteudo-sobre{
