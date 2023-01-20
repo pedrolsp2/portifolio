@@ -49,3 +49,9 @@ function reveal(){
   });
 }
 window.addEventListener("scroll",reveal);
+
+setTimeout(function(){
+  let lod = document.getElementById('lod');
+
+  lod.classList.add('tirar'); 
+},3000)

@@ -14,6 +14,37 @@ body {
     background-color: #131313;
 }
 
+.loading{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.tirar{
+    display: none;
+    visibility: hidden;
+}
+
+.loading img{
+    position: absolute;
+    top: 100px;
+    transition: 250ms;
+}
+
+.loading img:hover{
+    transform: scale(105%);
+    transition: 250ms;
+}
+
+
+svg path,
+svg rect{
+  fill: #FF6700;
+}
+
 .container {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/back.jpg) fixed;
     background-size: cover;
@@ -552,8 +583,8 @@ footer{
 }
 
 .slide-in-top {
-	-webkit-animation: slide-in-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	-webkit-animation: slide-in-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both 3700ms ;
+	        animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both 3700ms ;
 }
 
 @-webkit-keyframes slide-in-top {
@@ -582,8 +613,8 @@ footer{
   }
   
   .slide-in-fwd-top {
-	-webkit-animation: slide-in-fwd-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-fwd-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	-webkit-animation: slide-in-fwd-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both 3700ms ;
+	        animation: slide-in-fwd-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both 3700ms ;
 }
 
 @-webkit-keyframes slide-in-fwd-top {
@@ -612,8 +643,8 @@ footer{
   }
   
   .scale-up-center {
-	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both 3700ms ;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both 3700ms ;
 }
 @-webkit-keyframes scale-up-center {
   0% {
@@ -648,4 +679,4 @@ footer{
 	transform: translateY(0);
 	opacity: 1;
 }
- 
+  
