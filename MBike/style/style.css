@@ -53,6 +53,11 @@ body {
     visibility: hidden;
 }
 
+.secs{
+    display: none;
+    visibility: hidden;
+}
+
 .loading img{
     position: absolute;
     top: 100px;
@@ -361,6 +366,8 @@ svg rect{
     color: #fff;
 }
 
+
+
 .info{
     display: flex;
     justify-content: flex-start;
@@ -616,6 +623,11 @@ footer{
 }
  
 .remove{
+    display: none;
+    visibility: hidden;
+}
+
+.publis{
     display: none;
     visibility: hidden;
 }
