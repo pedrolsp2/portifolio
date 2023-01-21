@@ -213,6 +213,11 @@ svg rect{
     transition: 300ms;
 }
 
+.container img{
+    display: none;
+    visibility: hidden;
+}
+
 .container h1 {
     margin-top: -6rem;
     color: #fff;
