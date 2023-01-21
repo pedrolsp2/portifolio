@@ -28,6 +28,9 @@ function toggleMenu(event) {
   } else {
     event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
   }
+
+  document.getElementById('tira').classList.toggle('tirar');
+
 }
 
 btnMobile.addEventListener('click', toggleMenu);
