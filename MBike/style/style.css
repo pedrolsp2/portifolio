@@ -109,6 +109,7 @@ svg rect{
     align-items: center;
     text-align: center;
     gap: 2rem;
+    z-index: 100;
 }
 
 #menu {
