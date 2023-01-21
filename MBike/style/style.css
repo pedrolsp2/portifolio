@@ -1,8 +1,25 @@
 img{
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    background-size: cover !important;
+    -o-background-size: cover !important; 
+}
+
+.topo img{
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+    transition: 400ms ease-in-out;
+}
+
+.topo img:hover{
+    transform: scale(105%);
+    transform: rotate(360deg) ;
+    transition: 400ms;
+
 }
 
 :root {
@@ -15,6 +32,7 @@ img{
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
+        scroll-behavior: smooth;
 }
 
 body {
@@ -239,16 +257,31 @@ svg rect{
 }
 
 .item {
+    background-color: #Fff;
     border-radius: 8px;
     height: 18.75rem;
     width: 19rem;
     margin: 0.2rem;
     row-gap: 10;
+    padding: 0.7rem;
+}
+ 
+.perfil-curi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;  
+    margin-bottom: 0.7rem;
 }
 
-.borda {
-    border-left: 1px solid rgb(131, 131, 131);
-    border-right: 1px solid rgb(131, 131, 131);
+.item h3{
+    text-align: center;
+    color: var(--corPrimaria);
+    margin-bottom: 0.7rem;
+}
+
+.item p{
+    text-align: justify;
 }
 
 .depoimentos-pedal-banner {
@@ -398,6 +431,7 @@ svg rect{
 }
 
 .card{
+    padding: 1rem;
     width: 20rem;
     height: 24rem;
     background-color: #dadada;
@@ -587,6 +621,38 @@ footer{
 .ter{
     background-image: url(../img/perfil5.jpg) !important;
 
+}
+
+.perfil{
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.perfil img{
+    margin-left: 0.2rem;
+    clip-path: circle(50% at 50% 50%);
+    width: 4rem;
+    height: 4rem;
+}
+
+.depoimento{
+    width: 100%;
+    margin-top: 0.5rem; 
+    height: 14rem;
+    text-align: justify;
+    color: var(--corPrimaria);
+    display: flex;
+    align-items: flex-start;
+}
+
+#considera{
+    position: absolute;
+    bottom: 1rem;
+    padding: 0rem 1rem 0rem 0rem;
 }
 
 .slide-in-top {
