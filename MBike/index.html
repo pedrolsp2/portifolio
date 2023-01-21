@@ -14,7 +14,7 @@
     <title>MoutainBike - Um Estilo de Vida</title>
 </head>
 <body onresize="ajustaTamanho()">
-    
+ <!--    
 <div class="loading" id="lod">
     <img src="img/logo-front.svg" alt="logo">
 
@@ -31,6 +31,17 @@
     </div>
 
 </div>
+ -->
+
+<div class="popUp tirar" id="popUp">
+    <div class="pop">
+        <div class="x" onclick="Sair()">╳</div>
+        <img src="img/logo-front.svg" alt="Logo">
+        <h3>Nosso Grupo está temporariamente fora!</h3>
+        <h5 onclick="Sair()">Ok</h5>
+    </div>
+</div>
+
 
 <header id="header" class="slide-in-top" id="top">
     <img src="img/logo.png" id="logo" alt="Logo">
@@ -43,7 +54,7 @@
             <li> <a href="#fotos">FOTOS</a></li>
             <li> <a href="#contato">CONTATO</a></li>
 
-            <a href="" id="btn-menu">FAÇA PARTE DO PEDAL</a>
+            <a onclick="Abrir()" id="btn-menu">FAÇA PARTE DO PEDAL</a>
         </ul>
     </nav>
 </header>
@@ -59,7 +70,7 @@
         </h1>
     </div>
 </div>
-<a href="" id="btn-cont">Quero ser do pedal</a>
+<a  onclick="Abrir()" id="btn-cont">Quero ser do pedal</a>
 
 <div class="curiosidades">
     <div class="item">
@@ -68,7 +79,7 @@
         </div>
             <h3>Lindas Paisagens</h3>
         <div class="depo-curi">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure sit illum cupiditate odit exercitationem sed commodi esse. Accusantium molestias eius nihil eaque sequi iste dolorum eum esse, animi ipsa aspernatur?</p>
+            <p>O ciclismo de montanha é praticado junto a natureza e muitas vezes o desconhecimento da trilha ou ter pouca experiência são barreiras para os novatos curtirem o verdadeiro espírito do esporte.</p>
         </div>
     </div>
 
@@ -78,7 +89,7 @@
         </div>
             <h3>Bikes lindas</h3>
         <div class="depo-curi">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure sit illum cupiditate odit exercitationem sed commodi esse. Accusantium molestias eius nihil eaque sequi iste dolorum eum esse, animi ipsa aspernatur?</p>
+            <p>Existem grandes diferenças entre mountain bike e esportes para bicicletas comuns, uma vez que a finalidade do primeiro é andar em terrenos irregulares. As bikes para essa modalidade devem ser resistentes, a fim de suportar maiores impactos.</p>
         </div>
     </div>
 
@@ -88,27 +99,20 @@
         </div>
             <h3>Equipamentos de luxo</h3>
         <div class="depo-curi">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure sit illum cupiditate odit exercitationem sed commodi esse. Accusantium molestias eius nihil eaque sequi iste dolorum eum esse, animi ipsa aspernatur?</p>
+            <p>É de suma importância saber quais os equipamentos básicos para pedalar no MTB e que serão aliados na melhoria da sua prática, sendo alguns indispensáveis para manter a segurança do ciclista.</p>
         </div>
     </div>
 
 </div>
 
-<div class="depoimentos-pedal-banner">
+<div class="depoimentos-pedal-banner" id="depoimento">
     <h1 class="reveal">Depoimentos do pedal</h1>
 </div>
 
 <div class="conteudo">
     <div class="texto reveal">
-        <h2>Lorem Ipsum</h2>
-        <p>Lorem ipsum dolor sit amet consectetur. Blandit egestas erat adipiscing mattis et. Mauris id lectus
-            consectetur sed. Quam tristique tincidunt proin sit massa. Commodo odio in scelerisque id in. Rhoncus id
-            quis diam diam. Pretium amet tempor sem semper molestie adipiscing est posuere. Quis vitae orci leo nibh
-            convallis venenatis tellus in. Odio convallis sed suspendisse arcu tellus. Libero enim vestibulum sit
-            viverra ornare elementum nulla aenean. Commodo dolor consequat pulvinar augue mi neque. Viverra tortor
-            tortor nibh varius malesuada feugiat.<br>
-            Elementum aliquet arcu lacinia eleifend id nibh nunc. Proin in ac amet at sed pellentesque nunc. Dui
-            arcu id ipsum id imperdiet viverra. Placerat fames mauris massa volutpat accumsan faucibus.</p>
+        <h2>Beltano Miranda</h2>
+        <p> Eu adorei pedalar, e adorei o Grupo! Foi a segunda vez que participei e achei super bem organizado, nas duas vezes os locais de largada/chegada foram maravilhosos, a comunicação visual do evento está bem bacana, sinalização e apoio no trajeto nota 10! -, comenta Renata Mesquita, de São Paulo, uma das dezenas de participantes. - Teve a opção para iniciantes, além do tal trajeto galáctico. Achei legal porque agrada todos os gostos. E a região é muito, mas muito bonita-, acrescentou. 'Pretendo ir mais vezes, chamar minha familia, filhos, espora, todo mundo! Faz muito bem para a saúde.'</p>
     </div>
     <div class="foto reveal">
         <div class="img"></div>
@@ -120,11 +124,9 @@
     <div class="cont-publi reveal">
         <div class="info">
             <div class="img primeiro"></div>
-            <h3>Fulando da Silva</h3>
+            <h3>Beltano Miranda</h3>
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur. Blandit egestas erat adipiscing mattis et. Mauris id lectus
-            consectetur sed. Quam tristique tincidunt proin sit massa. Commodo odio in scelerisque id in. Rhoncus id
-            quis diam diam. Pretium amet tempor sem semper molestie adipiscing est posuere.</p>
+        <p>Este foto tirei no meio do trajeto. Lindas paisagens, o grupo bem inido e conversador. Tirei bastante fotos, mas está eu Adorei! Pretendo adicionar ela em um grupo de concursos de fotos de Bikes e com o objetivo de incentivar as pessoas a sairem do sedentarismo, afinal, estamos promovendo a qualidade de vida.</p>
         <div class="local">
             <img src="img/local.svg" alt="Local">
             <h5>Pico do Javalí, Santa Carina</h5>
@@ -134,19 +136,8 @@
 <div class="remove reveal">
     <div class="conteudo">
         <div class="texto reveal">
-            <h2>Lorem Ipsum</h2>
-            <p>Lorem ipsum dolor sit amet consectetur. Blandit egestas erat adipiscing mattis et. Mauris id lectus
-                consectetur sed. Quam tristique tincidunt proin sit massa. Commodo odio in scelerisque id in.
-                Rhoncus id
-                quis diam diam. Pretium amet tempor sem semper molestie adipiscing est posuere. Quis vitae orci leo
-                nibh
-                convallis venenatis tellus in. Odio convallis sed suspendisse arcu tellus. Libero enim vestibulum
-                sit
-                viverra ornare elementum nulla aenean. Commodo dolor consequat pulvinar augue mi neque. Viverra
-                tortor
-                tortor nibh varius malesuada feugiat.<br>
-                Elementum aliquet arcu lacinia eleifend id nibh nunc. Proin in ac amet at sed pellentesque nunc. Dui
-                arcu id ipsum id imperdiet viverra. Placerat fames mauris massa volutpat accumsan faucibus.</p>
+            <h2>Fulano da Silva</h2>
+            <p>É um desafio, por isso chamamos de trilhão, para que qualquer pessoa possa sentir a emoção de pedalar num circuito de competição, só que num ritmo de passeio -, explica Arlei Teixeira Domingos, organizador do Trilhão Radical e ciclista profissional de 1999 a 2009, com títulos de campeão brasileiro de mountain bike maratona e heptacampeão paulista de MTB. Os participantes puderam escolher entre os três percursos disponíveis: Peba com 12,5km e 350 metros de altimetria; Forte com 20,5km com 750m de altimetria e o Galáctico com 45km e 1.400 metros de altimetria pela encosta da Serra da Mantiqueira.</p>
         </div>
         <div class="foto reveal">
             <div class="img2"></div>
@@ -160,19 +151,8 @@
             <div class="img2"></div>
         </div>
         <div class="texto reveal">
-            <h2>Lorem Ipsum</h2>
-            <p>Lorem ipsum dolor sit amet consectetur. Blandit egestas erat adipiscing mattis et. Mauris id lectus
-                consectetur sed. Quam tristique tincidunt proin sit massa. Commodo odio in scelerisque id in.
-                Rhoncus id
-                quis diam diam. Pretium amet tempor sem semper molestie adipiscing est posuere. Quis vitae orci leo
-                nibh
-                convallis venenatis tellus in. Odio convallis sed suspendisse arcu tellus. Libero enim vestibulum
-                sit
-                viverra ornare elementum nulla aenean. Commodo dolor consequat pulvinar augue mi neque. Viverra
-                tortor
-                tortor nibh varius malesuada feugiat.<br>
-                Elementum aliquet arcu lacinia eleifend id nibh nunc. Proin in ac amet at sed pellentesque nunc. Dui
-                arcu id ipsum id imperdiet viverra. Placerat fames mauris massa volutpat accumsan faucibus.</p>
+            <h2>Fulano da Silva</h2>
+            <p>É um desafio, por isso chamamos de trilhão, para que qualquer pessoa possa sentir a emoção de pedalar num circuito de competição, só que num ritmo de passeio -, explica Arlei Teixeira Domingos, organizador do Trilhão Radical e ciclista profissional de 1999 a 2009, com títulos de campeão brasileiro de mountain bike maratona e heptacampeão paulista de MTB. Os participantes puderam escolher entre os três percursos disponíveis: Peba com 12,5km e 350 metros de altimetria; Forte com 20,5km com 750m de altimetria e o Galáctico com 45km e 1.400 metros de altimetria pela encosta da Serra da Mantiqueira.</p>
         </div>
     </div>
 </div>
@@ -185,9 +165,7 @@
             </div>
             <h3>Fulando da Silva</h3>
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur. Blandit egestas erat adipiscing mattis et. Mauris id lectus
-            consectetur sed. Quam tristique tincidunt proin sit massa. Commodo odio in scelerisque id in. Rhoncus id
-            quis diam diam. Pretium amet tempor sem semper molestie adipiscing est posuere.</p>
+        <p>Fui atleta profissional por 10 anos e agora chegou o momento de compartilhar minha experiência no esporte, por isso resolvi organizar os eventos de bike com o objetivo de incentivar as pessoas a sairem do sedentarismo, que oferece nos eventos uma infraestrutura completa para manter a ordem e a segurança dos ciclistas.</p>
         <div class="local">
             <img src="img/local.svg" alt="Local">
             <h5>Pico do Javalí, Santa Carina</h5>
@@ -201,8 +179,8 @@
         <div class="img jnt sec"></div>
         <div class="img jnt ter"></div>
     </div>
-    <div class="texto">
-        <h2>Lorem Ipsum</h2>
+    <div class="texto" id="porq">
+        <h2>Porque praticar MTB?</h2>
     </div>
 </div>
 
@@ -210,22 +188,22 @@
     <div class="card reveal">
         <div class="perfil">
             <img src="img/perfil4.jpg" alt="Foto">
-            <h3>Fualndo de Tal</h3>
+            <h3>Ciclano Matos</h3>
         </div>
         <div class="depoimento">
-            <p>Lorem ipsum dolor sit amet consectetur. Blandit egestas erat adipiscing mattis et. Mauris id lectus consectetur sed. Quam tristique tincidunt proin sit massa. Commodo odio in scelerisque id in.</p>
-            <p id="considera"> Quam tristique tincidunt proin sit massa. Commodo odio in scelerisque id in.</p>
+            <p>Porque é saudável e benéfico para seu corpo. O exercício sobre a bicicleta tonifica seus músculos, melhora seu sistema cardiovascular e sua circulação e ajuda você a manter controlado seu peso. Além do mais, ajuda você psicologicamente e faz que você se sinta melhor.</p>
+            <p id="considera"> Bora pedalar!</p>
         </div>
     </div>
 
     <div class="card meio reveal">
         <div class="perfil">
             <img src="img/perfil1.jpg" alt="Foto">
-            <h3>Fualndo de Tal</h3>
+            <h3>Beltano Miranda</h3>
         </div>
         <div class="depoimento">
-            <p>Lorem ipsum dolor sit amet consectetur. Blandit egestas erat adipiscing mattis et. Mauris id lectus consectetur sed. Quam tristique tincidunt proin sit massa. Commodo odio in scelerisque id in.</p>
-            <p id="considera"> Quam tristique tincidunt proin sit massa. Commodo odio in scelerisque id in.</p>
+            <p>Porque é divertido. É um excelente exercício, é um esporte que você poderá praticar com amigos e que fará você rir e se divertir muito. Sempre terá histórias para contar e, ainda, caso participe de competições, o esporte em si sempre é divertido para quem o pratica com gosto.</p>
+            <p id="considera">Vamos nessa!</p>
         </div>
 
     </div>
@@ -233,18 +211,18 @@
     <div class="card reveal">
         <div class="perfil">
             <img src="img/perfil5.jpg" alt="Foto">
-            <h3>Fualndo de Tal</h3>
+            <h3>Matias Morais</h3>
         </div>
         <div class="depoimento">
-            <p>Lorem ipsum dolor sit amet consectetur. Blandit egestas erat adipiscing mattis et. Mauris id lectus consectetur sed. Quam tristique tincidunt proin sit massa. Commodo odio in scelerisque id in.</p>
-            <p id="considera"> Quam tristique tincidunt proin sit massa. Commodo odio in scelerisque id in.</p>
+            <p> Andar de bicicleta ajudará você a melhorar a coordenação entre seus olhos e o resto das partes do seu corpo. Melhorará os movimentos das pernas, braços e cintura, além de muitas outras partes de seu corpo, enquanto você mantém o equilíbrio pedalando.</p>
+            <p id="considera"> Movimenta-se!</p>
         </div>
 
     </div>
 
 </div>
 
-<h2 class="h2" id="fotos">Lorem Ipsum</h2>
+<h2 class="h2" id="fotos">Nossa Galeria</h2>
 
 <div class="slider reveal">
     <div class="slides">
@@ -331,9 +309,32 @@
        <a href="#top"><img src="img/topo.svg" alt="Ir para o Topo"></a> 
     </div>
 
-<footer id="contato"></footer>
+<footer id="contato">
+    <img src="img/footer-mb.jpg" alt="RodaPé" class="foots">
+
+    <div class="footer-sec">
+        <h2>Quem somos?</h2><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit minima, atque amet nihil quos maiores excepturi distinctio sed eos sequi nesciunt. Nemo pariatur veritatis, magnam dolore quos delectus reprehenderit labore.</p><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit minima, atque amet nihil quos maiores excepturi distinctio sed eos sequi nesciunt. Nemo pariatur veritatis, magnam dolore quos delectus reprehenderit labore.</p>
+    </div>
+    <div class="footer-sec">
+        <h2>Onde estamos?</h2><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit minima, atque amet nihil quos maiores excepturi distinctio sed eos sequi nesciunt. Nemo pariatur veritatis, magnam dolore quos delectus reprehenderit labore.</p><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit minima, atque amet nihil quos maiores excepturi distinctio sed eos sequi nesciunt. Nemo pariatur veritatis, magnam dolore quos delectus reprehenderit labore.</p>
+    </div>
+    <div class="footer-sec">
+        <H2>Link Uteis</H2><br><br>
+        <a href="#top">Home</a><br><br>
+        <a href="#depoimento">Depoimentos</a><br><br>
+        <a href="#porq">Motivos MTB</a><br><br>
+        <a href="#fotos">Galeria</a><br><br>
+    </div>
+    <h4 id="copy"> Copyright © 2023 - Todos os diretos reservados para Pedro Lucas Silva Paula</h4>
+
+</footer>
 
 <script src="script/script.js"></script>
+<script></script>
 </body>
 
 </html>

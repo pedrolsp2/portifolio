@@ -176,17 +176,26 @@ img{
     align-items: center;
 }
 
-.publi, .second{
+.publi, .second, footer{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
 }
 
-.publis, .secs{
+.publis, .secs, .foots{
     display: inline !important;
     visibility: visible !important;
     height: 25rem;
     width: 100%;
     position: absolute;
     opacity: 0.3;
+}
+
+.foots{
+    display: inline !important;
+    visibility: visible !important;
+    height: 30rem;
+    width: 100%;
+    position: absolute;
+    opacity: 0.1;
 }
 
 .cont-publi{

@@ -58,3 +58,15 @@ setTimeout(function(){
 
   lod.classList.add('tirar'); 
 },3000)
+
+
+function Abrir(){
+var popUp = document.getElementById('popUp')
+  popUp.classList.replace('tirar','slide-in-fwd-center')
+}
+
+function Sair(){
+  var popUp = document.getElementById('popUp')
+    popUp.classList.replace('slide-in-fwd-center','tirar')
+
+}
