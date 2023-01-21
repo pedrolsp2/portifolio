@@ -1,3 +1,10 @@
+img{
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
 :root {
     --corPrimaria: #FF6601;
 }

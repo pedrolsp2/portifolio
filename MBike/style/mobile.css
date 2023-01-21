@@ -1,6 +1,15 @@
-.container {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/menu-mob.jpg) fixed;
+img{
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
     background-size: cover;
+    -o-background-size: cover;
+}
+
+.container {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/menu-mob.jpg) fixed;    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
     background-position: top;
     height: 100vh;
     width: 100%;
@@ -82,6 +91,10 @@
 
 .depoimentos-pedal-banner {
     margin-top: 5rem !important;
+}
+
+.depoimentos-pedal-banner{
+    font-size: 0.8rem;
 }
 
 .conteudo {
