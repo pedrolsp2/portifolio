@@ -1,6 +1,19 @@
 :root {
     --corPrimaria: #FF6601;
-}
+} 
+body::-webkit-scrollbar {
+    width: 0.5rem;      
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #000;
+    backdrop-filter: blur(12.5px);
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--corPrimaria);   
+    border-radius: 10px;    
+  }
 img{
     -webkit-background-size: cover !important;
     -moz-background-size: cover !important;
