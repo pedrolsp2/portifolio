@@ -6,6 +6,7 @@
     --corBranco: #fafafa;
     --corSubTextos: #a0A0A0;
 }
+ 
 
 .ir-topo{
     position: fixed;
@@ -111,7 +112,7 @@ li:hover{
     visibility: visible;
     transition: 100ms ease-in;
 }
-.menu a{  
+.menu label{  
     display: flex;
     position: absolute;
     bottom: -25px;
@@ -125,7 +126,7 @@ li:hover{
     transition: 100ms ease-in;
 }
 
-.menu a::after{
+.menu label::after{
     content: '';
     position: absolute;
     display: block;
@@ -139,7 +140,7 @@ li:hover{
     margin-left: -25px;
 }
 
-.menu a:hover{
+.menu label:hover{
     color: var(--corSecundaria);
     font-size: 1.1rem;
 }

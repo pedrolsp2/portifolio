@@ -1,6 +1,9 @@
 :root {
     --corPrimaria: #FF6601;
-} 
+}  
+html{
+    overflow: hidden;
+}
 body::-webkit-scrollbar {
     width: 0.5rem;      
   }

@@ -57,16 +57,19 @@ setTimeout(function(){
   let lod = document.getElementById('lod');
 
   lod.classList.add('tirar'); 
+  document.querySelector('html').style.overflow = 'auto'; 
 },3000)
 
 
 function Abrir(){
-var popUp = document.getElementById('popUp')
-  popUp.classList.replace('tirar','slide-in-fwd-center')
+var popUp = document.getElementById('popUp');
+  popUp.classList.replace('tirar','slide-in-fwd-center');
+  document.querySelector('html').style.overflow = 'hidden'; 
 }
 
 function Sair(){
   var popUp = document.getElementById('popUp')
     popUp.classList.replace('slide-in-fwd-center','tirar')
+    document.querySelector('html').style.overflow = 'auto'; 
 
 }
