@@ -24,6 +24,38 @@ img{
     -o-background-size: cover !important; 
 }
 
+#progress {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    height: 75px;
+    width: 75px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  #progress-value {
+    display: block;
+    height: calc(100% - 10px);
+    width: calc(100% - 10px);
+    background: url(../img/topo.svg);
+    background-size: cover;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 35px;
+    color: var(--corPrimaria);
+    transition: 400ms;
+  } 
+#progress-value:hover{
+    transform: scale(105%);
+    transform: rotate(360deg) ;
+    transition: 400ms;
+
+}
+
 .popUp{
     width: 100%;
     height: 100vh;
@@ -73,23 +105,6 @@ img{
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
-}
-
-.topo img{
-    position: fixed;
-    right: 1rem;
-    bottom: 1rem;
-    width: 5rem;
-    height: 5rem;
-    cursor: pointer;
-    transition: 400ms ease-in-out;
-}
-
-.topo img:hover{
-    transform: scale(105%);
-    transform: rotate(360deg) ;
-    transition: 400ms;
-
 }
 
 * {
