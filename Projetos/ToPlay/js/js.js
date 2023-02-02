@@ -13,7 +13,7 @@ function reveal(){
     reveals.forEach((reveal)=>{
         var windowHeight = window.innerHeight;
         var elementTop = reveal.getBoundingClientRect().top;
-        var elementVisible = 100;
+        var elementVisible = 70;
 
         if(elementTop <windowHeight - elementVisible){
             reveal.classList.add("rolar");

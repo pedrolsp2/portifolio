@@ -30,7 +30,7 @@ ul {
 nav a {
   text-decoration: none;
   color: var(--corPrincipal);
-}
+} 
 
 header {
   height: 70px;
@@ -45,10 +45,15 @@ header {
   margin: 0;
   transition: 0.5s;
   z-index: 100000;
+  top: 0; 
+  color: #fff;
+}
+
+.header-inicio {
+  position: absolute;
   top: 0;
-  -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  background-color: transparent !important;
+  color: var(--corPrincipal) !important;
 }
 
 .logo {
@@ -60,6 +65,96 @@ header {
   position: relative;
   cursor: pointer;
   z-index: 10000000;
+}
+.inicio{    
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/back.jpg) fixed;
+  background-size: cover; 
+  display: flex;
+  align-items: center;
+  padding-top: 10rem;
+}
+section{
+  padding: 2rem; 
+}
+
+section h1{
+  font-size: 3rem;
+  text-align: left;
+  margin-bottom: 1.1rem;
+  color: #00a060;
+}
+
+section h3{
+  color: #fff;
+  font-weight: normal;
+}
+
+section input{
+  height: 3rem;
+  width: 40rem;
+  text-align: left;
+  padding-left: 8px; 
+}
+ 
+
+section input:nth-child(1){   
+  position: absolute;
+  margin-top: 1px;
+  float: left; 
+  z-index: 1;
+  background-color: rgb(255, 255, 255); 
+}
+
+section label{
+  color: rgb(151, 151, 151);
+}
+
+section input:nth-child(2){   
+  position: absolute;
+  width: 5rem;
+  margin-top: 69px;
+  right: 85px;
+  background-color: var(--corPrincipal);  
+  text-align: right !important;
+  color: #fff;
+  padding-right: 1rem;
+  cursor: pointer;
+  transition: 300ms; 
+}
+
+.hover{
+  background-color: #a11;
+ /* transform: scale(110%);
+ transition: 300ms;  */
+}
+
+
+span#msg{
+  position: relative;
+  border: 1px slod red;
+  float: left;
+  margin-top: -5rem;
+  width: 60%;
+  height: 15rem;
+}
+
+span#att{
+  position: relative;
+  border: 1px slod red; 
+  float: left; 
+  width: 60%;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo a{
+  position: absolute;
+  padding: 30px 40px;
+  background: transparent !important;
+  color: transparent !important;
 }
 
 .menu {

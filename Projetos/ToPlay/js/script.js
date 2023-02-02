@@ -22,22 +22,22 @@ btnMobile.addEventListener('touchstart', toggleMenu);
 
 window.addEventListener('scroll', function(){
     var menu = document.querySelector('header');
-    menu.classList.toggle('sticky', window.scrollY > 200);
+    menu.classList.toggle('sticky', window.scrollY > 600);
   })
 
   window.addEventListener('scroll', function(){
     var menu = document.querySelector('.logo');
-    menu.classList.toggle('sticky2', window.scrollY > 200);
+    menu.classList.toggle('sticky2', window.scrollY > 600);
   })
 
   window.addEventListener('scroll', function(){
     var menu = document.querySelector(' #btn-celular');
-    menu.classList.toggle('sticky3', window.scrollY > 200);
+    menu.classList.toggle('sticky3', window.scrollY > 600);
   })
 
   window.addEventListener('scroll', function(){
     var menu = document.querySelector('#icon-menu');
-    menu.classList.toggle('sticky4', window.scrollY > 200);
+    menu.classList.toggle('sticky4', window.scrollY > 600);
   })
  
   var TxtType = function(el, toRotate, period) {
