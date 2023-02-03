@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
 
 :root {
   --corPrincipal: #085e3b;
@@ -9,7 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif, 'Calibri', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-align: justify;
   scroll-behavior: smooth;
 }
@@ -78,7 +76,8 @@ header {
   position: relative;
   cursor: pointer;
   z-index: 10000000;
-}
+} 
+
 .inicio{    
   width: 100%;
   height: 100vh;
