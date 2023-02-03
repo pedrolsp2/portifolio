@@ -123,6 +123,28 @@ section label{
   color: rgb(151, 151, 151);
 }
 
+.sair{
+  display: none;
+  visibility: hidden;
+  transition: 300ms;
+  color: #fff;
+}
+.msg-ip{
+  display: none;
+  visibility: hidden;
+}
+
+section button{  
+  background-color: var(--corPrincipal);
+  padding: 0.1rem;
+  text-align: center;
+  margin-top: 15rem;
+  position: absolute;
+  border-radius: 10px;
+  width: 10rem;
+  transition: 300ms;
+}
+
 section input:nth-child(2){    
   position: absolute;
   width: 10rem;
@@ -137,7 +159,7 @@ section input:nth-child(2){
 }
 
 
-section input:nth-child(3){   
+section input:nth-child(4){   
   display: none;
   visibility: hidden;
 }
