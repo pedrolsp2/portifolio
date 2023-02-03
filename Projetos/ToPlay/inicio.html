@@ -12,7 +12,7 @@
 	<meta name="image" content="images/logo.png"> 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" media="(max-width: 450px)" href="css/mobile.css">
 	<link rel="icon" href="images/icone.ico">
@@ -51,12 +51,11 @@
 					<input type="email" name="email" id="email"
 						placeholder="Digite seu endereço de e-mail para ter acesso"/>
 				</label>
-				<input type="button" value="✔" onmouseover="mOver()" id="bt"> 
-				<input type="button" value="Desejo ter acesso" onmouseover="mOver()" id="bt2"> 
+				<input type="button" value="Enviar" onclick="mOver()" id="bt"> 
+				<input type="button" value="Desejo ter acesso"  id="bt2"> 
 			</span>
 		</section>
-	</div>
-
+	</div>  
 	<div class="second-nave">
 		<div class="second-menu">
 			<a href="inicio.html" id="icon-menu-inferior">
@@ -98,7 +97,7 @@
 			<img src="images/msgbemvindo.png" id="bem-vindo">
 		</div>
 
-		<h2 class="reveal">Sobre o sistema.</h2>
+		<h2 class="reveal">Sobre o sistema.</h2> 
 
 		<p>&nbsp &nbsp Atualmente o número de quadras esportivas cresceram de uma forma considerável, com isso, a
 			variedade de esportes aumentaram. Pensando nisso, desenvolvemos um software para gerenciar as partidas de
@@ -325,8 +324,7 @@
 
 function mOver()
 {
-	let btn_input = document.getElementById('bt');
-		btn_input.classList.add('hover')
+	let btn_input = document.getElementById('bt'); 
 }
 	</script>
 

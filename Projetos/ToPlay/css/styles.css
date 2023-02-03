@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-align: justify;
   scroll-behavior: smooth;
 }
@@ -123,17 +123,17 @@ section label{
   color: rgb(151, 151, 151);
 }
 
-section input:nth-child(2){   
+section input:nth-child(2){    
   position: absolute;
-  width: 5rem;
-  margin-top: 69px;
-  right: 85px;
+  width: 10rem;
+  margin-top: 15rem;
   background-color: var(--corPrincipal);  
-  text-align: right !important;
+  text-align: center;
   color: #fff;
   padding-right: 1rem;
   cursor: pointer;
   transition: 300ms; 
+  float: left;
 }
 
 
@@ -147,8 +147,7 @@ section input:nth-child(3){
  /* transform: scale(110%);
  transition: 300ms;  */
 }
-
-
+ 
 span#msg{
   position: relative;
   border: 1px slod red;
