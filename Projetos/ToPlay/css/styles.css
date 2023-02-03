@@ -456,8 +456,8 @@ main h4 {
   text-decoration: none;
   padding: 2px;
   color: var(--corPrincipal);
-  white-space: nowrap;
-  font-size: 5rem;
+  white-space: nowrap; 
+  transition: 400ms;
 }
 
 .area-form {
@@ -891,6 +891,12 @@ button:hover {
   animation-timing-function: ease;
   animation-fill-mode: forwards;
   animation-delay: 0s, 100ms;
+}
+
+.top img:hover{
+  transform: scale(105%);
+  transform: rotate(360deg) ;
+  transition: 400ms;
 }
 
 .alert.error .inner {
