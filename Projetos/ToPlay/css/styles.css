@@ -19,6 +19,19 @@ body {
   background-attachment: fixed;
   backface-visibility: hidden;
 }
+body::-webkit-scrollbar {
+    width: 0.5rem;      
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #00000075;
+    backdrop-filter: blur(12.5px);
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--corPrincipal);   
+    border-radius: 10px;    
+  }
 
 /*****************COMEÇO MENU*********************/
 
@@ -122,6 +135,12 @@ section input:nth-child(2){
   padding-right: 1rem;
   cursor: pointer;
   transition: 300ms; 
+}
+
+
+section input:nth-child(3){   
+  display: none;
+  visibility: hidden;
 }
 
 .hover{
