@@ -1,6 +1,20 @@
-
 :root {
   --corPrincipal: #085e3b;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-family: 'Poppins', sans-serif;
+}
+.sairr{
+    display: none !important;
+    visibility: hidden !important;
 }
 
 * {
@@ -17,19 +31,20 @@ body {
   background-attachment: fixed;
   backface-visibility: hidden;
 }
+
 body::-webkit-scrollbar {
-    width: 0.5rem;      
-  }
-  
-  body::-webkit-scrollbar-track {
-    background: #00000075;
-    backdrop-filter: blur(12.5px);
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background-color: var(--corPrincipal);   
-    border-radius: 10px;    
-  }
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #00000075;
+  backdrop-filter: blur(12.5px);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--corPrincipal);
+  border-radius: 10px;
+}
 
 /*****************COMEÇO MENU*********************/
 
@@ -41,7 +56,7 @@ ul {
 nav a {
   text-decoration: none;
   color: var(--corPrincipal);
-} 
+}
 
 header {
   height: 70px;
@@ -56,7 +71,7 @@ header {
   margin: 0;
   transition: 0.5s;
   z-index: 100000;
-  top: 0; 
+  top: 0;
   color: #fff;
 }
 
@@ -76,65 +91,67 @@ header {
   position: relative;
   cursor: pointer;
   z-index: 10000000;
-} 
+}
 
-.inicio{    
+.inicio {
   width: 100%;
   height: 100vh;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/back.jpg) fixed;
-  background-size: cover; 
+  background-size: cover;
   display: flex;
   align-items: center;
   padding-top: 10rem;
 }
-section{
-  padding: 2rem; 
+
+section {
+  padding: 2rem;
 }
 
-section h1{
+section h1 {
   font-size: 3rem;
   text-align: left;
   margin-bottom: 1.1rem;
   color: #00a060;
 }
 
-section h3{
+section h3 {
   color: #fff;
   font-weight: normal;
 }
 
-section input{
+section input {
   height: 3rem;
   width: 40rem;
   text-align: left;
-  padding-left: 8px; 
+  padding-left: 8px;
 }
- 
 
-section input:nth-child(1){   
+
+section input:nth-child(1) {
   position: absolute;
   margin-top: 1px;
-  float: left; 
+  float: left;
   z-index: 1;
-  background-color: rgb(255, 255, 255); 
+  background-color: rgb(255, 255, 255);
 }
 
-section label{
+section label {
   color: rgb(151, 151, 151);
 }
 
-.sair{
+.sair {
   display: none;
   visibility: hidden;
   transition: 300ms;
   color: #fff;
 }
-.msg-ip{
+
+.msg-ip {
   display: none;
   visibility: hidden;
 }
 
-section button{  
+section button {
   background-color: var(--corPrincipal);
   padding: 0.1rem;
   text-align: center;
@@ -145,32 +162,32 @@ section button{
   transition: 300ms;
 }
 
-section input:nth-child(2){    
+section input:nth-child(2) {
   position: absolute;
   width: 10rem;
   margin-top: 15rem;
-  background-color: var(--corPrincipal);  
+  background-color: var(--corPrincipal);
   text-align: center;
   color: #fff;
   padding-right: 1rem;
   cursor: pointer;
-  transition: 300ms; 
+  transition: 300ms;
   float: left;
 }
 
 
-section input:nth-child(4){   
+section input:nth-child(4) {
   display: none;
   visibility: hidden;
 }
 
-.hover{
+.hover {
   background-color: #a11;
- /* transform: scale(110%);
+  /* transform: scale(110%);
  transition: 300ms;  */
 }
- 
-span#msg{
+
+span#msg {
   position: relative;
   border: 1px slod red;
   float: left;
@@ -179,17 +196,17 @@ span#msg{
   height: 15rem;
 }
 
-span#att{
+span#att {
   position: relative;
-  border: 1px slod red; 
-  float: left; 
+  border: 1px slod red;
+  float: left;
   width: 60%;
   height: 15rem;
   display: flex;
   align-items: center;
 }
 
-.logo a{
+.logo a {
   position: absolute;
   padding: 30px 40px;
   background: transparent !important;
@@ -513,7 +530,8 @@ h4 {
   ;
 }
 
-input,select  {
+input,
+select {
   width: 250px;
   height: 40px;
   border-radius: 10px;
@@ -529,7 +547,7 @@ input,select  {
   -webkit-backdrop-filter: blur(9.2px);
 }
 
-select-selected{
+select-selected {
   background-color: red;
 }
 
@@ -942,16 +960,17 @@ button:hover {
 .manutencao img {
   width: 100%;
 }
+
 .fim {
   animation: alert 1s linear infinite alternate;
 }
 
 @keyframes fim {
   0% {
-      background: #112
+    background: #112
   }
 
   100% {
-      background: #a11;
+    background: #a11;
   }
 }
