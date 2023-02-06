@@ -96,7 +96,7 @@ header {
 .inicio {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/back.jpg) fixed;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/back.webp) fixed;
   background-size: cover;
   display: flex;
   align-items: center;
