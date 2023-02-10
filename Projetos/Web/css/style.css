@@ -331,6 +331,7 @@ padding: 0.1px 0px;
     color: #00326b;
  }
 
+ 
 
 
 
@@ -403,6 +404,7 @@ padding: 0.1px 0px;
 }
 
 @media screen and (max-width: 450px) {
+
     header {
         width: 100%;
     }
@@ -452,8 +454,7 @@ padding: 0.1px 0px;
     }
 
     .item img {
-        width: 80%;
-        margin-top: -70px !important;
+    visibility: hidden;
     }
 
     .item h1 {
@@ -565,4 +566,59 @@ padding: 0.1px 0px;
 }
 
  
+}
+
+
+/*efeitos*/
+
+.scale-in-hor-left {
+	-webkit-animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+@-webkit-keyframes scale-in-hor-left {
+    0% {
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-hor-left {
+    0% {
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+      opacity: 1;
+    }
+  }
+  
+   
+.reveal {
+	position: relative;
+	transform: translateY(144px);
+	opacity: 0;
+	transition: 1s all ease;
+}
+
+.reveal.rolar{
+	transform: translateY(0);
+	opacity: 1;
 }
