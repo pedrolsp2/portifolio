@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login ToPlay</title> 
+</head>
+
+<body>
+    <span id="first"></span>
+    <span id="second"></span>
+
+    <main>
+        
+        <div class="container">
+           <div class="menu">
+
+                <div class="back">
+                    <a href="../inicio.html"><img src="img/back.svg" alt="Voltar"></a>
+                </div>
+
+                <div class="new-user">
+                    <a id="flip-btn" onclick="flip()"><img src="img/user.svg" alt="Voltar"></a>
+                </div>
+
+                <section class="info-emp">
+                    <img src="img/avatar.jpg" alt="ToPlay">
+                    <h2><a id="h2-entrar">Entrar</a><br>
+                        Sistema ToPlay</h2>
+                </section>
+                <hr>
+
+                    <form action="submit" onsubmit="handleFormSubmit(event)">
+                <section class="input">
+
+                        
+                        <label for="user">E-mail ou usuário</label>
+                        <input type="text" name="user" id="user" placeholder="Digite seu usuário" />
+
+                        <label for="password">Senha</label>
+                        <input type="password" name="password" id="password" placeholder="Digite sua senha" />
+                </section>
+
+                <label for="conected" id="con">
+                    <input type="checkbox" name="conected" id="conected">&nbsp&nbspContinuar conectado
+                </label>
+
+                <a href="#" id="esqueci-senha">Esqueci minha senha</a>
+
+                <input type="submit" value="Entrar" id="sub" onclick="validaCampos()"></input>
+                </form>
+            </div>
+        </div>
+
+        <div class="rotate">
+
+            <div class="new-user">
+                <a onclick="flip()"><img src="img/login.svg" alt="Voltar"></a>
+            </div>
+
+            <section class="info-emp">
+                <img src="img/avatar.jpg" alt="ToPlay">
+                <h2><a id="h2-entrar">Cadastrar</a><br>
+                    Sistema ToPlay</h2>
+            </section>
+            <hr>
+
+                <form action="submit" onsubmit="handleFormSubmit(event)">
+
+            <section class="input">
+
+                     
+                    <label for="email-register">E-mail</label>
+                    <input type="text" name="email-register" id="email-register" placeholder="Digite seu e-mail" />
+
+                    <label for="user-register">Usuário</label>
+                    <input type="text" name="user-register" id="user-register" placeholder="Digite seu usuário" />
+
+                    <label for="password-register">Senha</label>
+                    <input type="register" name="password-register" id="password-register" placeholder="Digite sua senha" />
+
+                    <label for="confirmed-password">Confirme Senha</label>
+                    <input type="password" name="confirmed-password" id="confirmed-password" placeholder="Confirme sua senha" />
+            </section>
+
+            <input type="submit" value="Cadastrar" id="sub-register" onclick="validaCampos()"></input>
+            </form>
+        </div>
+    </div>
+
+        <div class="alert">
+            <h3 id="titulo-alert"></h3>
+            <p id="texto-alert"></p>
+            <section id="porc"></section>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
