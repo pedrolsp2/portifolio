@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ToPlay - Gerenciamento</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="img/avatar.jpg" alt="avatar">
+        </div>
+    </header>
+
+    <main>
+
+        <div class="boas-vindas">
+            <article id="texto">
+                <h1>Olá, User!</h1>
+                <h2>Veja como está o seu centro esportivo</h2>
+            </article>
+
+            <article id="quadra">
+                <p>Quadra em atividade</p>
+                <img src="../images/quadra.png" alt="quadra">
+            </article>
+        </div>
+
+        <section class="info-quadra">
+
+            <article class="cont-info-quadra hr">
+                <p>Não há horários futuros reservados!</p>
+
+                <table border="1">
+                    <tr id="cabecalho">
+                        <td>Data</td>
+                        <td>Término</td>
+                        <td id="qtde">Qtde. Jogadores</td>
+                        <td>Valor</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            08/02 10:00
+                        </td>
+                        <td>
+                            08/02 11:00
+                        </td>
+                        <td>
+                            22
+                        </td>
+                        <td>
+                            R$ 70,00
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            08/02 14:00
+                        </td>
+                        <td>
+                            08/02 15:00
+                        </td>
+                        <td>
+                            27
+                        </td>
+                        <td>
+                            R$ 70,00
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            08/02 17:00
+                        </td>
+                        <td>
+                            08/02 19:30
+                        </td>
+                        <td>
+                            43
+                        </td>
+                        <td>
+                            R$ 155,00
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            08/02 19:30
+                        </td>
+                        <td>
+                            08/02 20:30
+                        </td>
+                        <td>
+                            20
+                        </td>
+                        <td>
+                            R$ 80,00
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            08/02 21:00
+                        </td>
+                        <td>
+                            08/02 22:00
+                        </td>
+                        <td>
+                            25
+                        </td>
+                        <td>
+                            R$ 80,00
+                        </td>
+                    </tr>
+
+                </table>
+            </article>
+
+            <article class="cont-info-quadra tbl">
+                <p>Jogos Terminados</p>
+
+                <table border="1">
+                    <tr id="cabecalho">
+                        <td>Data</td>
+                        <td>Término</td>
+                        <td id="qtde">Qtde. Jogadores</td>
+                        <td>Valor</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            07/02 15:00
+                        </td>
+                        <td>
+                            07/02 16:00
+                        </td>
+                        <td>
+                            22
+                        </td>
+                        <td>
+                            R$ 70,00
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            07/02 16:00
+                        </td>
+                        <td>
+                            07/02 17:00
+                        </td>
+                        <td>
+                            25
+                        </td>
+                        <td>
+                            R$ 70,00
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            07/02 17:00
+                        </td>
+                        <td>
+                            07/02 19:00
+                        </td>
+                        <td>
+                            35
+                        </td>
+                        <td>
+                            R$ 145,00
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            07/02 19:00
+                        </td>
+                        <td>
+                            07/02 20:30
+                        </td>
+                        <td>
+                            28
+                        </td>
+                        <td>
+                            R$ 115,00
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            07/02 21:00
+                        </td>
+                        <td>
+                            07/02 22:00
+                        </td>
+                        <td>
+                            22
+                        </td>
+                        <td>
+                            R$ 80,00
+                        </td>
+                    </tr>
+
+                </table>
+
+            </article>
+
+        </section>
+
+        <h1>Confira seu andamento este mês</h1>
+
+        <section class="relatorios">
+
+            <article class="grafico">
+
+                <div class="sobre-rel">
+                    <div id="title">
+                        <h3>Haking de horarios</h3>
+                        <p>Veja quantas vezes a quadra foi locada</p>
+                    </div>
+
+                    <div class="btn">
+                        <img onclick="gerarRelatorio()" src="img/close.svg" alt="Fechar">
+                        <img src="img/imprime.svg" alt="Imprimir">
+                    </div>
+
+                </div>
+
+                <div class="img-grafico">
+                    <img src="img/GRAFICO 1.svg" alt="Grafico" width="100%">
+                </div>
+
+                <div class="buton">
+                    <button id="b1" onclick="gerarRelatorio()">Gerar relatório</button>
+                    <span class="loader Nvisivel"></span>
+                </div>
+
+            </article>
+
+            <article class="grafico">
+
+                <div class="sobre-rel">
+                    <div id="title">
+                        <h3>Faturamento</h3>
+                        <p>Veja o valor que cada quadra rendeu</p>
+                    </div>
+                    <div class="btn2">
+                        <img onclick="gerarRelatorio2()" src="img/close.svg" alt="Fechar">
+                        <img src="img/imprime.svg" alt="Imprimir">
+                    </div>
+
+                </div>
+
+                <div class="img-grafico2">
+                    <img src="img/GRAFICO 2.svg" alt="Grafico" width="100%">
+                </div>
+
+                <div class="buton">
+                    <button  id="b2" onclick="gerarRelatorio2()">Gerar relatório</button>
+                    <span class="loader2 Nvisivel"></span>
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <script src="script/index.js"></script>
+</body>
+
+</html>
