@@ -42,6 +42,29 @@ function validaCampos() {
         
     }, 1)
     }
+    else if(user !== "Pedro" || psw !== "pedro"){
+        setTimeout(() => {
+            btn.setAttribute("disabled", true);
+            alert.classList.toggle('alert-fim');
+            porcent.style.animation = 'movie';
+            porcent.style.animationDuration = '4s';
+            porcent.style.animationDelay = '400ms';
+            porcent.style.backgroundColor = "#c50d00";
+            h3.style.color = "#d70000";
+            h3.innerHTML = "Ops, correu um erro";
+            txt.innerHTML = "E-mail ou senha incorretos!"
+
+            setTimeout(() => {
+                btn.removeAttribute("disabled");
+                alert.classList.toggle('alert-fim');
+                porcent.classList.toggle('movie');
+                porcent.style.animation = '';
+                porcent.style.animationDuration = '';
+                porcent.style.animationDelay = '';
+        }, 4000);
+        
+    }, 1)
+    }
     else{
         setTimeout(() => {
             alert.classList.toggle('alert-fim');
@@ -62,6 +85,9 @@ function validaCampos() {
         }, 4000);
         
     }, 1)
+    setTimeout(()=>{
+    window.location.href = '../maneger-page/index.html';
+    },4000)
     }
  }
 
