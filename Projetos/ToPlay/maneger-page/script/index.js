@@ -63,3 +63,16 @@ function closeRel2(){
     botao2.classList.replace("Nvisivel",'visivel')
 
 }
+
+function sair(ex){
+    var div = document.getElementById('sair')
+    if(ex === 'sair'){
+        div.classList.toggle('visivel');
+    }
+    else if(ex ==='sim'){
+        window.location.href = '../login/login.html';
+    }   
+     else{
+        div.classList.toggle('visivel');
+    }
+}
