@@ -102,6 +102,24 @@ section#sair{
     border-radius: 100%;
 } 
 
+.logo::after{
+    position: absolute;
+    content: '2';
+    background-color: #00A060;
+    padding: 2px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 14px;
+    color: #fff;
+    border: 2.5px solid #09965d;
+    left: 60px;
+    top: 9%;
+}
+
 main {
     margin-left: 100px;
 }
@@ -236,6 +254,12 @@ td {
 
 .menu-header{
     margin-right: 10px;
+}
+
+
+.logo::after{
+    left: 45px;
+    top: 50%;
 }
 
 .deseja-sair{
