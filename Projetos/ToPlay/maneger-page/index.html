@@ -15,20 +15,76 @@
         <div class="deseja-sair">
             <h1>Deseja mesmo sair?</h1>
             <div class="but">
-            <button onclick="sair('sim')">Sim</button>
-            <button onclick="sair('nao')">Não</button>
-             </div>
+                <button onclick="sair('sim')">Sim</button>
+                <button onclick="sair('nao')">Não</button>
+            </div>
         </div>
-</section>
+    </section>
 
-<section class="notification">
-    
-</section>
+    <section class="notify">
+        <img src="img/close.svg" alt="fechar" id="close-notify" onclick="notify()">
+        <h1>Central de notificações</h1>
+        <hr>
+        <div class="itms">
+            <div class="logo-notify">
+                <img src="img/not-pre.svg" alt="Pre Reserva" width="82">
+            </div>
+            <div class="cont-notify">
+                <h3>Pré Reserva</h3>
+                <p>O cliente {user} fez uma pré reserva para 00/00/00 as 15:00.</p>
+                <p>Serão 10 jogadores, usaram 10 coletes e 1 bola.</p> 
+            </div>
+        </div>
+        <hr>
+        <div class="itms">
+            <div class="logo-notify">
+                <img src="img/not-pre.svg" alt="Pre Reserva" width="82">
+            </div>
+            <div class="cont-notify">
+                <h3>Pré Reserva</h3>
+                <p>O cliente {user} fez uma pré reserva para 00/00/00 as 15:00.</p>
+                <p>Serão 10 jogadores, usaram 10 coletes e 1 bola.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="itms">
+            <div class="logo-notify">
+                <img src="img/not-pre.svg" alt="Pre Reserva" width="82">
+            </div>
+            <div class="cont-notify">
+                <h3>Pré Reserva</h3>
+                <p>O cliente {user} fez uma pré reserva para 00/00/00 as 15:00.</p>
+                <p>Serão 10 jogadores, usaram 10 coletes e 1 bola.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="itms">
+            <div class="logo-notify">
+                <img src="img/not-pre.svg" alt="Pre Reserva" width="82">
+            </div>
+            <div class="cont-notify">
+                <h3>Pré Reserva</h3>
+                <p>O cliente {user} fez uma pré reserva para 00/00/00 as 15:00.</p>
+                <p>Serão 10 jogadores, usaram 10 coletes e 1 bola.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="itms">
+            <div class="logo-notify">
+                <img src="img/not-pre.svg" alt="Pre Reserva" width="82">
+            </div>
+            <div class="cont-notify">
+                <h3>Pré Reserva</h3>
+                <p>O cliente {user} fez uma pré reserva para 00/00/00 as 15:00.</p>
+                <p>Serão 10 jogadores, usaram 10 coletes e 1 bola.</p>
+            </div>
+        </div>
+    </section>
 
     <header>
-        <div class="logo">
-            <img src="img/avatar.jpg" alt="avatar">
-       
+        <div class="logo" id="logo" onclick="notify()">
+            <img src="img/avatar.jpg" alt="avatar" onclick="notify()">
+
         </div>
         <div class="menu-header">
             <img src="img/sair.svg" alt="Sair" onclick="sair('sair')">
@@ -246,7 +302,7 @@
 
                     <div class="btn">
                         <img onclick="closeRel()" src="img/close.svg" alt="Fechar">
-                       <a href="./Relatorio Horarios.pdf" download><img src="img/imprime.svg" alt="Imprimir"></a> 
+                        <a href="./Relatorio Horarios.pdf" download><img src="img/imprime.svg" alt="Imprimir"></a>
                     </div>
 
                 </div>
@@ -271,7 +327,7 @@
                     </div>
                     <div class="btn2">
                         <img onclick="closeRel2()" src="img/close.svg" alt="Fechar">
-                        <a href="./Relatorio Faturamento.pdf" download><img src="img/imprime.svg" alt="Imprimir"></a> 
+                        <a href="./Relatorio Faturamento.pdf" download><img src="img/imprime.svg" alt="Imprimir"></a>
                     </div>
 
                 </div>
@@ -281,7 +337,7 @@
                 </div>
 
                 <div class="buton">
-                    <button  id="b2" onclick="gerarRelatorio2()">Gerar relatório</button>
+                    <button id="b2" onclick="gerarRelatorio2()">Gerar relatório</button>
                     <span class="loader2 Nvisivel"></span>
                 </div>
 

@@ -76,3 +76,8 @@ function sair(ex){
         div.classList.toggle('visivel');
     }
 }
+
+function notify(){
+    const not = document.querySelector('.notify'); 
+    not.classList.toggle('notifyV');
+}
