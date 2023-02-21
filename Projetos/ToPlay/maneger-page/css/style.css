@@ -40,6 +40,11 @@ header {
     flex-direction: column;
 }
 
+header button   {
+    background-color: transparent;
+    border: 0;
+}
+
 section#sair{ 
     position: absolute;
     width: 100%;
@@ -103,11 +108,11 @@ section#sair{
     cursor: pointer;
 } 
 
-.logo::after{
+
+#count{
     position: absolute;
-    content: '2';
     background-color: #00A060;
-    padding: 2px;
+    padding: 12px;
     width: 20px;
     height: 20px;
     display: flex;
@@ -118,7 +123,7 @@ section#sair{
     color: #fff;
     border: 2.5px solid #09965d;
     left: 60px;
-    top: 9%;
+    top: 8%;
     cursor: pointer;
 }
 
@@ -259,7 +264,7 @@ td {
 }
 
 
-.logo::after{
+#count{
     left: 45px;
     top: 50%; 
 }
