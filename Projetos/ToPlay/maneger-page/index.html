@@ -32,7 +32,7 @@
             <div class="cont-notify">
                 <h3>Pré Reserva</h3>
                 <p>O cliente {user} fez uma pré reserva para 00/00/00 as 15:00.</p>
-                <p>Serão 10 jogadores, usaram 10 coletes e 1 bola.</p> 
+                <p>Serão 10 jogadores, usaram 10 coletes e 1 bola.</p>
             </div>
         </div>
         <hr>
@@ -83,13 +83,35 @@
 
     <header>
         <button class="logo" id="logo" onclick="notify()">
-           <a onclick="notify()"> <img src="img/avatar.jpg" alt="avatar" onclick="notify()">
-            <span id="count"  onclick="notify()">5</span></a>
+            <a onclick="notify()"> <img src="img/avatar.jpg" alt="avatar" onclick="notify()">
+                <span id="count" onclick="notify()">5</span></a>
         </button>
         <div class="menu-header">
+
+            <button id="bbtn" onclick="openSet()">
+                <img src="img/settin.svg" alt="Settins" id="set">
+            </button>
+
+            <button id="bbtn2" onclick="openSetMob()">
+                <img src="img/settin.svg" alt="Settins" id="set2">
+            </button>
+
+            <div class="config-setting" id="aabb">
+
+                <img src="img/notifys.svg" alt="" class="icon-not" id="not">
+                <img src="img/docs.svg" alt="" class="icon-docs" id="doc">
+                <img src="img/gra.svg" alt="" class="icon-graf" id="gra">
+
+            </div>
             <img src="img/sair.svg" alt="Sair" onclick="sair('sair')">
         </div>
     </header>
+
+    <div class="sub-header-mob">
+        <a href=""><img src="img/notifys.svg" alt="" class="" id="not-mob">Notificações</a>
+        <a href=""><img src="img/docs.svg" alt="" class="" id="doc-mob">Jogos</a>
+        <a href=""><img src="img/gra.svg" alt="" class="" id="gra-mob">Gráficos</a>
+    </div>
 
     <main>
 

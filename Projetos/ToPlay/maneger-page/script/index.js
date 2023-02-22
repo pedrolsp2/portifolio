@@ -81,3 +81,24 @@ function notify(){
     const not = document.querySelector('.notify'); 
     not.classList.toggle('notifyV');
 }
+
+function openSet(){
+    var setting = document.getElementById('set')
+    var notifi = document.getElementById('not')
+    var docs = document.getElementById('doc')
+    var grafi = document.getElementById('gra')
+
+    setting.classList.toggle('lop')
+    notifi.classList.toggle('icon-not')
+    docs.classList.toggle('icon-docs')
+    grafi.classList.toggle('icon-graf')
+    
+}
+
+function openSetMob(){
+    var setting = document.getElementById('set2')
+    setting.classList.toggle('lop')
+
+    var divMob = document.querySelector('.sub-header-mob')
+    divMob.classList.toggle('sub-visi')
+}
