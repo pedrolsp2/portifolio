@@ -109,3 +109,9 @@ var vlr = document.getElementById('outputValue')
 range.addEventListener('change',()=>{
     vlr.innerHTML = range.value
 })
+var range2 = document.getElementById('rangeInput2')
+var vlr2 = document.getElementById('outputValue2')
+
+range2.addEventListener('change',()=>{
+    vlr2.innerHTML = range2.value
+})
