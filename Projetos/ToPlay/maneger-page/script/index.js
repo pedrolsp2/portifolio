@@ -102,3 +102,10 @@ function openSetMob(){
     var divMob = document.querySelector('.sub-header-mob')
     divMob.classList.toggle('sub-visi')
 }
+
+var range = document.getElementById('rangeInput')
+var vlr = document.getElementById('outputValue')
+
+range.addEventListener('change',()=>{
+    vlr.innerHTML = range.value
+})

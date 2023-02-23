@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ToPlay - Gerenciamento</title>
+</head>
+
+<body>
+
+    <section id="sair">
+        <div class="deseja-sair">
+            <h1>Deseja mesmo sair?</h1>
+            <div class="but">
+                <button onclick="sair('sim')">Sim</button>
+                <button onclick="sair('nao')">Não</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="notify">
+        <img src="img/close.svg" alt="fechar" id="close-notify" onclick="notify()">
+        <h1>Central de notificações</h1>
+        <hr>
+        <div class="itms">
+            <div class="logo-notify">
+                <img src="img/not-pre.svg" alt="Pre Reserva" width="82">
+            </div>
+            <div class="cont-notify">
+                <h3>Pré Reserva</h3>
+                <p>O cliente {user} fez uma pré reserva para 00/00/00 as 15:00.</p>
+                <p>Serão 10 jogadores, usaram 10 coletes e 1 bola.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="itms">
+            <div class="logo-notify">
+                <img src="img/not-pre.svg" alt="Pre Reserva" width="82">
+            </div>
+            <div class="cont-notify">
+                <h3>Pré Reserva</h3>
+                <p>O cliente {user} fez uma pré reserva para 00/00/00 as 15:00.</p>
+                <p>Serão 10 jogadores, usaram 10 coletes e 1 bola.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="itms">
+            <div class="logo-notify">
+                <img src="img/not-pre.svg" alt="Pre Reserva" width="82">
+            </div>
+            <div class="cont-notify">
+                <h3>Pré Reserva</h3>
+                <p>O cliente {user} fez uma pré reserva para 00/00/00 as 15:00.</p>
+                <p>Serão 10 jogadores, usaram 10 coletes e 1 bola.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="itms">
+            <div class="logo-notify">
+                <img src="img/not-pre.svg" alt="Pre Reserva" width="82">
+            </div>
+            <div class="cont-notify">
+                <h3>Pré Reserva</h3>
+                <p>O cliente {user} fez uma pré reserva para 00/00/00 as 15:00.</p>
+                <p>Serão 10 jogadores, usaram 10 coletes e 1 bola.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="itms">
+            <div class="logo-notify">
+                <img src="img/not-pre.svg" alt="Pre Reserva" width="82">
+            </div>
+            <div class="cont-notify">
+                <h3>Pré Reserva</h3>
+                <p>O cliente {user} fez uma pré reserva para 00/00/00 as 15:00.</p>
+                <p>Serão 10 jogadores, usaram 10 coletes e 1 bola.</p>
+            </div>
+        </div>
+    </section>
+
+    <header>
+        <button class="logo" id="logo" onclick="notify()">
+            <a onclick="notify()"> <img src="img/avatar.jpg" alt="avatar" onclick="notify()">
+                <span id="count" onclick="notify()">5</span></a>
+        </button>
+        <div class="menu-header">
+
+            <button id="bbtn" onclick="openSet()">
+                <img src="img/settin.svg" alt="Settins" id="set">
+            </button>
+
+            <button id="bbtn2" onclick="openSetMob()">
+                <img src="img/settin.svg" alt="Settins" id="set2">
+            </button>
+
+            <div class="config-setting" id="aabb">
+
+                <img src="img/notifys.svg" alt="" class="" id="not">
+                <img src="img/docs.svg" alt="" class="" id="doc">
+                <img src="img/gra.svg" alt="" class="" id="gra">
+
+            </div>
+            <img src="img/sair.svg" alt="Sair" onclick="sair('sair')">
+        </div>
+    </header>
+
+    <div class="sub-header-mob">
+        <a href=""><img src="img/notifys.svg" alt="" class="" id="not-mob">Notificações</a>
+        <a href=""><img src="img/docs.svg" alt="" class="" id="doc-mob">Jogos</a>
+        <a href=""><img src="img/gra.svg" alt="" class="" id="gra-mob">Gráficos</a>
+    </div>
+
+
+<div class="configs">
+
+    <a href="index.html"><img src="img/volar.svg" alt="Voltar" id="back" width="3%"></a>
+
+    <section class="config-tabela">
+
+        <article id="cab">
+
+            <h2>Tabela 01</h2>
+            <p>Próximos horários</p>
+
+        </article>
+
+        <article id="valor">
+            
+        <article id="orde">
+
+            <label for="ordedar">Ordedar por:</label>
+            <select id="orderSelect">
+                <option value="desc">Decrescente</option>
+                <option value="asc">Crescente</option>
+            </select>
+
+        </article>
+
+        <article id="n-part">
+            <label for="rangeInput">Nº de partidas a serem mostradas:</label>
+            <input name="rangeInput" type="range" id="rangeInput" min="0" max="10" value="0">
+            <a id="outputValue">0</a>
+        </article>
+        </article>
+
+        </section>
+        <section class="config-tabela">
+
+        <article id="cab">
+
+            <h2>Tabela 01</h2>
+            <p>Próximos horários</p>
+
+        </article>
+
+        <article id="valor">
+            
+        <article id="orde">
+
+            <label for="ordedar">Ordedar por:</label>
+            <select id="orderSelect">
+                <option value="desc">Decrescente</option>
+                <option value="asc">Crescente</option>
+            </select>
+
+        </article>
+        
+        <article id="n-part">
+            <label for="rangeInput">Nº de partidas a serem mostradas:</label>
+            <input name="rangeInput" type="range" id="rangeInput" min="0" max="10" value="0">
+            <a id="outputValue">0</a>
+        </article>
+        </article>
+
+    </section>
+</body>
+    <script src="script/index.js"></script>
+</div>
+
+</html>
