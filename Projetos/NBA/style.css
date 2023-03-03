@@ -1,0 +1,150 @@
+:root {
+    --c01: #90081E;
+    --c02: #02325A;
+}
+
+body {
+    background-color: #131313;
+    color: #fff;
+    overflow: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.container h1 {
+    text-align: center;
+    margin: 2rem 0rem;
+    font-size: 3.5rem;
+}
+
+.container h2 {
+    text-align: left;
+    margin-left: 2.5rem;
+    animation: some 3.1s;
+    animation-delay: 3610ms;
+}
+
+article#loading, #bar{ 
+    border-radius: 3px;
+    margin: 0 auto;
+    width: 80%;
+    height: 12px;
+    background-color: #d9d9d98e;
+    color: transparent;
+}
+
+
+#bar{
+    animation: loading 3s;
+    animation-delay: 500ms;
+    float: left;
+    background-color: var(--c01);
+    width: 100%; 
+}
+
+#logo{
+    animation: logo 3s;
+    animation-delay: 4700ms;
+}
+
+.transfor{
+    transform: translateY(-80px) scale(60%);
+}
+
+.back{ 
+    background-image: url(img/back.jpg);
+}
+
+.some{
+    transform: translate(0,250%);
+    transition: all 300ms;
+    display: none;
+    visibility: hidden;
+}
+
+.aparece{
+    transform: translate(0%);
+}
+
+.input{
+    margin-top: -5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    text-align: left;
+    font-size: 1.1rem; 
+    margin-left: 10px;
+    margin-bottom: -10px;
+}
+
+input, button{
+    margin: 10px;
+    height: 3rem;
+    padding: 1rem;
+    background-color: #78787836;
+    border: 0;
+    border-radius: 8px;
+}
+
+button{
+    background-color: var(--c01);
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+a{
+    float: right;
+    text-align: right;
+    margin: -5px 10px 0px 0px;
+}
+
+#tb{
+    margin-top: 5.5rem;
+}
+
+
+@keyframes loading { 
+    0%{ 
+        width: 0%;
+    } 
+    100%{ 
+        width: 100%;
+    } 
+}  
+@keyframes some {
+    0%{ 
+        color: #000;
+    }  
+    14%{ 
+        color: #131313;
+    }   
+    100%{ 
+        color: #131313;
+    }     
+}
+
+@keyframes logo {
+    0%{
+        transform: translateY(0px) scale(100%);
+    }
+    100%{
+        transform: translateY(-80px) scale(60%);
+    }
+    
+}
