@@ -1,8 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
-:root {
+ :root {
   --cor01: #3C6178;
   --cor02: #C32B3F;
+}
+
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 30px;  
+  padding: 12px 20px;
+  text-align: center;
+  color: #ffffff;
+  background-color: var(--cor01);
+  border-radius: 50%;
+  display: none;
+  z-index: 9999;
+  transition: all 300ms;
+}
+
+#back-to-top:hover {
+  background-color: var(--cor02);
+  transition: all 300ms;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: #e1e1fc;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--cor01);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #4a6e85;
+  box-shadow: -2px 0px 4px rgba(145, 9, 9, 0.25);
 }
 
 * {
@@ -212,7 +246,7 @@ section#estabelecimento h1{
   align-items: center;
 }
 
-section#gp-wp h1, section#gp-wp p{
+section#grupos h1, section#grupos p{
   text-align: center;
 }
 
@@ -261,6 +295,9 @@ summary{
   padding: 1rem 1rem; 
   line-height: 2rem;
 }
+summary::-webkit-details-marker {
+  display: none;
+}
 
 h3{
   color: var(--cor01); 
@@ -274,9 +311,34 @@ h3{
   transition: all 200ms;
 }
 
+footer{
+  background: linear-gradient(99.66deg, #3C6178 7.39%, #61A0C8 101.62%);
+  display: flex;
+}
 
+footer article{ 
+  width: 100%;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0rem;
+}
 
+footer article img{
+  width: 100px;
+  margin: 2rem;
+}
 
+footer article h2{
+  color: #fff;
+  margin: 2rem 0rem 5rem 1rem; 
+}
+
+footer article p, footer article a{
+  color: #fff;
+  align-items: baseline !important;
+  margin: .5rem;
+}
 
 @media screen and (max-width: 700px) {
   /*         HEADER         */
@@ -393,6 +455,19 @@ section#novo-cidade article:first-child{
   justify-content: space-evenly;
   align-items: center;
 }
+
+footer{
+  background: linear-gradient(99.66deg, #3C6178 7.39%, #61A0C8 101.62%);
+  display: block;
+  height: 100vh;
+}
+
+footer article{ 
+display: flex;
+justify-content: center !important;
+align-items: center !important; 
+max-width: 100% !important;
+font-size: 1.2rem;
 }
 
 
