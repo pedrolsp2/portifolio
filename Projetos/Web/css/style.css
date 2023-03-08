@@ -12,6 +12,11 @@
 
 p {
     font-size: 1.1rem;
+    color: #313131;
+}
+
+h1{
+    color: #041c38;
 }
 
 body {
@@ -345,6 +350,42 @@ padding: 0.1px 0px;
 
 @media screen and (max-width: 800px) {
 
+    section#form h1{
+        text-align: center;
+    font-size: 32px !important;
+    }
+    
+    section form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: .5rem !important;
+        gap: 1rem;
+    }
+    
+    section input, textarea{
+        width: 100% !important;
+        padding: 1rem;
+        font-size: 1rem;
+        border-radius: 4px;
+        border: 1px solid #dadada;
+        background: transparent;
+    }
+      
+    #enviar{
+     
+        background-color: var( --corPrincipal);
+        color: #fff;
+        font-size: 22px;
+        width: 25%;
+        cursor: pointer;
+    }   
+
+    #enviar{
+        width: 100% !important;
+    }
+
     section#introducao {
         display: block;
     }
@@ -452,8 +493,9 @@ padding: 0.1px 0px;
         padding: 0 !important;
     }
 
-    .item img {
-    visibility: hidden;
+    #lgo{
+        margin-top: -4rem !important;
+        width: 320px;
     }
 
     .item h1 {
@@ -621,3 +663,42 @@ padding: 0.1px 0px;
 	transform: translateY(0);
 	opacity: 1;
 }
+
+section#form{
+    width: 100%;
+    background: url(../img/fundo-form.jpg) top no-repeat;
+    height: 100vh;
+    padding: 5rem 0rem;
+}
+
+section#form h1{
+    text-align: center;
+font-size: 42px;
+}
+
+section form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem;
+    gap: 1rem;
+}
+
+section input, textarea{
+    width: 80%;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #dadada;
+    background: transparent;
+}
+  
+#enviar{
+ 
+    background-color: var( --corPrincipal);
+    color: #fff;
+    font-size: 22px;
+    width: 25%;
+    cursor: pointer;
+}   
