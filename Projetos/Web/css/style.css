@@ -179,6 +179,9 @@ section#content {
 article {
     width: 300px;
     height: 250px;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 2px 2px #a5a5a538;
+    background: #ffffff41;
 }
 
 #icon {
@@ -535,7 +538,10 @@ padding: 0.1px 0px;
         min-width: 100%;
     }
 
-
+.problemas h1{
+    font-size: 1.97rem;
+    margin-bottom: 0.1rem;
+}
 
     section#content {
         display: flex;
@@ -548,7 +554,8 @@ padding: 0.1px 0px;
 
     article {
         width: 100% !important;
-        height: 300px;
+        height: auto !important;
+        padding: 1rem 0px;
     }
 
     #icon {
@@ -557,12 +564,13 @@ padding: 0.1px 0px;
         align-items: center;
         gap: 1rem;
         color: var(--corPrincipal);
-        font-size: 1.6rem;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
     }
 
     #texto {
-        padding: 0rem !important;
-        font-size: 1.5rem;
+        padding: 10px !important;
+        font-size: 1.4rem;
     }
 
     .solucoes {
@@ -587,8 +595,15 @@ padding: 0.1px 0px;
     } 
 
 #card { 
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100%; 
+}
+
+div#card.row {
+    flex-direction: column-reverse !important;
 }
  
 
@@ -702,3 +717,20 @@ section input, textarea{
     width: 25%;
     cursor: pointer;
 }   
+
+ 
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: #f2f2f2;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--corPrincipal);
+    border-radius: 2px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #F77C1A;
+    box-shadow: -2px 0px 4px rgba(145, 9, 9, 0.25);
+  }
