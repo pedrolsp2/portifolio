@@ -69,7 +69,7 @@ nav a {
 }
 
 button {
-  font-size: 1.2rem;
+  font-size: 2rem;
   background-color: transparent;
   border: 0px;
   display: none;
@@ -165,9 +165,9 @@ section#titulos article{
   width: 50vw;
 }
 
-section#titulos article:nth-child(1){
-  background: url('img/back-article.png')center;
-  background-size: cover;
+section#titulos img{
+  width: 700px;
+  margin-top: -10rem;
 }
 
 section#titulos h1{
@@ -189,11 +189,16 @@ margin-top: 3rem;
 
   section#titulos{
     display: flex; 
-    flex-direction: column;
+    flex-direction: column; 
   }
   section#titulos article{ 
     width: 100%;
     height: 100vh;
+  }
+
+  section#titulos img{
+    width: 100%;
+    margin-top: -5rem !important;
   }
 
   .item hr{
@@ -218,8 +223,8 @@ margin-top: 3rem;
   ul {
     position: absolute;
     left: 0;
-    top: 60px;
-    height: calc(100vh - 70px);
+    top: 70px;
+    height: calc(100vh - 60px);
     width: 100%;
     display: block;
     text-align: center;
