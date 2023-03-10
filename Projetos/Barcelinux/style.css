@@ -10,6 +10,7 @@
   font-family: 'Montserrat', sans-serif;
   text-decoration: none;
   color: #fff;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -186,10 +187,16 @@ margin-top: 3rem;
 }
 
 section#diretoria{
-  background: url('img/back-diretoria.png') center;
+  background: url('img/back-diretoria.png') fixed center;
   background-size: cover; 
+  margin: 18rem 0rem;
 }
 
+section#diretoria h1{
+  font-size: 32px;
+  text-align: center;
+  margin: -5rem 0rem 5rem 0rem; 
+}
 .card-diretoria{
   gap: 5rem !important;
 }
@@ -201,19 +208,41 @@ section#diretoria{
   background: rgba(0, 0, 0, 0.103);
   box-shadow: 1.39832px 1.86443px 4.66108px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(5.37881px);
-  border: 3px solid #dadada91
+  border: 3px solid #dadada91;
+  transition: all 300ms;
 }
 
+.cards:hover{
+  transform: scale(105%);
+  transition: all 300ms;
+}
+
+.card-info{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.card-info h2{
+  color: var(--cor01);
+}
+ 
+.card-info h3{
+  color: #dadada;
+  font-weight: 500;
+}
 
 @media screen and (max-width: 700px) {
 
   section#titulos{
     display: flex; 
     flex-direction: column; 
+    height: auto !important;
   }
   section#titulos article{ 
     width: 100%;
-    height: 100vh;
+    height: auto !important;
   }
 
   section#titulos img{
@@ -276,8 +305,20 @@ section#diretoria{
   }
   section#titulos article{ 
     width: 100%;
-    height: 100vh;
+    height: auto !important;
   }
 
+  .cards{
+    width: 300px;
+    height: 300px;
+  }
+
+  .card-info h2{
+    font-size: 3rem !important; 
+  }
+
+  .card-info h3{
+    font-size: 2rem !important;  
+  }
 
 }
