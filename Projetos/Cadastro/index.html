@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+	<title>Cadastro e Listagem</title>
+</head>
+
+<body>
+	<main>
+
+        <div class="alerta">
+            <h3 id="titulo-alerta">Erro</h3>
+            <p id="texto-alerta">Preencha todos os campos</p>
+            <section id="porcentagem"></section>
+        </div>
+
+		<form id="produtos">
+		<h1>Cadastro de Produtos</h1>
+
+			<input type="text" id="nome" name="nome" placeholder="Nome do Produto">
+
+			<textarea id="descricao" name="descricao" placeholder="Descrição breve do Produto"
+			></textarea>
+
+			<input type="text" id="valor" name="valor" placeholder="Valor do Produto" min="0.01" step="0.01" />
+
+			<select id="disponivel-venda" name="disponivel-venda">
+				<option disabled selected>Disponivel para venda</option>
+				<option value="sim">Sim</option>
+				<option value="nao">Não</option>
+			</select>
+
+			<button id="cadastrar">Cadastrar</button>
+		</form>
+
+		<div id="listagem-produtos">
+			<h1>Listagem de Produtos <button id="novo-produto"><img src="img/add.svg" alt=""></button></h1> 
+			<table>
+			  <thead>
+				<tr>
+				  <th>Nome</th>
+				  <th>Valor</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<!-- aqui serão adicionados os produtos dinamicamente -->
+			  </tbody>
+			</table>
+		  </div>
+
+	</main>
+	<script src="script/script.js"></script>
+</body>
+
+</html>
