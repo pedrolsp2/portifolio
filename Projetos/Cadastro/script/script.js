@@ -1,22 +1,23 @@
-$(document).ready(function() {
-    $('#valor').mask('000.000.000.000.000,00', {reverse: true});
-  });
-  
-
-
+ 
 let produtos = [];
 
 const cadastrarButton = document.getElementById('cadastrar');
 cadastrarButton.addEventListener('click', adicionarProduto);
 
+const novoButton = document.getElementById('novo-produto');
+novoButton.addEventListener('click',()=>{
+  nome.focus();
+})
+
 function adicionarProduto(event) {
     event.preventDefault();
+    document.getElementById('listagem-produtos').classList.remove('off')
     const pop = document.querySelector('.alerta');
-    const pop_perc = document.getElementById('porcentagem')
+    const pop_perc = document.getElementById('porcentagem');
     const nome = document.getElementById('nome').value;
     const descricao = document.getElementById('descricao').value;
     const valor = parseFloat(document.getElementById('valor').value);
-    const disponivelVenda = document.getElementById('disponivel-venda').value;
+    const disponivelVenda = document.getElementById('disponivel-venda').value;;
     if(!nome || !valor){ 
         setTimeout(() => {
             pop.classList.toggle('visivel');

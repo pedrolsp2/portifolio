@@ -9,8 +9,6 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 	<title>Cadastro e Listagem</title>
 </head>
@@ -32,7 +30,7 @@
 			<textarea id="descricao" name="descricao" placeholder="Descrição breve do Produto"
 			></textarea>
 
-			<input type="text" id="valor" name="valor" placeholder="Valor do Produto" min="0.01" step="0.01" />
+			<input type="text" id="valor" name="valor" placeholder="Valor do Produto" min="0.01" step="0.01" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"/>
 
 			<select id="disponivel-venda" name="disponivel-venda">
 				<option disabled selected>Disponivel para venda</option>
@@ -43,7 +41,7 @@
 			<button id="cadastrar">Cadastrar</button>
 		</form>
 
-		<div id="listagem-produtos">
+		<div id="listagem-produtos" class="off">
 			<h1>Listagem de Produtos <button id="novo-produto"><img src="img/add.svg" alt=""></button></h1> 
 			<table>
 			  <thead>
@@ -52,8 +50,7 @@
 				  <th>Valor</th>
 				</tr>
 			  </thead>
-			  <tbody>
-				<!-- aqui serão adicionados os produtos dinamicamente -->
+			  <tbody>  
 			  </tbody>
 			</table>
 		  </div>
