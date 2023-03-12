@@ -11,7 +11,6 @@ novoButton.addEventListener('click',()=>{
 
 function adicionarProduto(event) {
     event.preventDefault();
-    document.getElementById('listagem-produtos').classList.remove('off')
     const pop = document.querySelector('.alerta');
     const pop_perc = document.getElementById('porcentagem');
     const nome = document.getElementById('nome').value;
@@ -36,6 +35,7 @@ function adicionarProduto(event) {
     produtos.push(produto);
     atualizarTabela();
     document.getElementById('produtos').reset();
+    document.getElementById('listagem-produtos').classList.remove('off')
 }
   }
 
