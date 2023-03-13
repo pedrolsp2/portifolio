@@ -26,7 +26,7 @@
                     <ul id="nav" class="menu-nav toggle">
                         <li><a href="#sobre">Sobre</a></li>
                         <li><a href="#diretoria">Diretoria</a></li>
-                        <li><a href="#">Kit</a></li>
+                        <li><a href="#kit">Kit</a></li>
                     </ul>
                 </div><button id="botao-menu" onclick="menu()">☰</button>
             </div>
@@ -201,10 +201,15 @@
             </div>
         </div>
     </section>
-
+    
+    <div class="view">
+        <span id="close" onclick="closeapp()">X</span>
+        <img src="img/caneca-vw.png" alt="" id="img">
+        <button>Comprar</button>
+    </div> 
     <main>
         <section id="kit">
-            <h1>Confira e Adquira nosso KIT!</h1>
+            <h2>Confira e Adquira nosso KIT!</h2>
             <div class="kit-section">
 
                 <article id="1">
@@ -231,6 +236,7 @@
 
                 <article id="3">
                     <div class="saiba-mais">
+                    <h3>Clique para saber mais</h3>  
                     <div class="kit-info">
                         <span>Bucket</span>
                         <h1>R$ 39,90</h1>
@@ -241,6 +247,7 @@
 
                 <article id="4">
                     <div class="saiba-mais">
+                    <h3>Clique para saber mais</h3>  
                     <div class="kit-info">
                         <span>Caneca + Tirante</span>
                         <h1>R$ 110,00</h1>
@@ -248,10 +255,10 @@
                     </div>    
                 </div>                  
                 </article>
-
             </div>
+            
         </section>
-    </main>
+    </main> 
 
     <script src="js/script.js"></script>
 </body>

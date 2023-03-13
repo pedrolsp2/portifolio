@@ -7,14 +7,14 @@ function menu() {
      btnMenu.classList.toggle('active')
  }
 
- let minhaDiv = document.querySelector("#1");
- let text = document.getElementById("#link-kit");
+ let minhaDiv = document.getElementById("1"); 
+ let vw = document.querySelector('.view')
+ let img = document.querySelector('#img')
+ minhaDiv.addEventListener("click", ()=> {
+  vw.classList.add('visible')
 
- minhaDiv.addEventListener("focus", ()=> {
-   text.classList.add("efeito");
- });
+}); 
  
- minhaDiv.addEventListener("blur", function() {
-   minhaDiv.classList.remove("efeito");
- });
- 
+ function closeapp(){
+  vw.classList.remove('visible')
+ }

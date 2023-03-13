@@ -312,6 +312,12 @@ section#redes-sociais {
   flex-wrap: wrap;
 }
 
+section#kit h2{
+  text-align: center;
+  margin: 8rem 0;
+  font-size: 2.4rem;
+}
+
 section#kit article, .saiba-mais{
   width: 270px;
   height: 500px;
@@ -333,6 +339,7 @@ section#kit article, .saiba-mais{
   transition: all 400ms; 
   font-size: 2rem;
   color: transparent;
+  border-radius: 12px 12px 2rem 2rem;
 }
 
 section#kit article:nth-child(1){ 
@@ -365,9 +372,9 @@ section#kit article:nth-child(4){
   background: rgba(0, 0, 0, 0.25);
 backdrop-filter: blur(12.5px);
 color: #fff;
-transition: all 400ms;
-z-index: 3; 
+transition: all 400ms; 
 } 
+  
 
 section#kit .kit-info {
   display: flex;
@@ -389,12 +396,54 @@ section#kit .kit-info h1 {
   font-size: 2rem;
 }
 
+.view{
+  background-color: #000000e5; 
+  width: 100%;
+  height: 100%;
+  position: absolute; 
+  display: grid;
+  place-items: center;
+  flex-direction: column; 
+  margin-top: 10rem;
+  z-index: 100; 
+  overflow: hidden;
+  display: none;
+  visibility: hidden;
+}
+
+.view img{
+  width: 60vh;
+  border-radius: 1rem;
+}
+
+.view span{
+  position: absolute;
+    right: 50px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.view button{
+  visibility: visible !important;
+  display: block !important;
+  border: .5px solid #fff;
+  font-size: 1.5rem;
+  padding: .5rem 2rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
 
 @media screen and (max-width: 1000px) {
 
   .siga-nos {
     width: 100%;
   }
+}
+
+.view img{
+  width: 50vh;
+  border-radius: 1rem;
 }
 
 @media screen and (max-width: 700px) {
@@ -432,6 +481,11 @@ section#kit .kit-info h1 {
     display: flex;
     align-items: center !important;
     padding: 3rem 5px;
+  }
+
+  .view img{
+    width: 40vh;
+    border-radius: 1rem;
   }
 }
 
@@ -517,4 +571,20 @@ section#kit .kit-info h1 {
     border-radius: 12px;
     cursor: pointer;
   }
+
+  section#kit article, .saiba-mais{
+    width: 100%;
+    height: 650px;
+    background-size: contain;
+    border-radius: 12px 12px 2rem 2rem;
+  }
+
+  .kit-section{
+    gap: 5rem;
+    }
+}
+
+.visible{
+  display: flex !important;
+  visibility: visible !important;
 }
