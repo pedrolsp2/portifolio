@@ -202,19 +202,22 @@
         </div>
     </section>
     
-    <div class="view">
-        <span id="close" onclick="closeapp()">X</span>
-        <img src="img/caneca-vw.png" alt="" id="img">
+
+    <div class="view" id="view">
+        <span id="close" onclick="closeapp()">×</span>
+        <img src="" alt="" id="img-view">
         <button>Comprar</button>
     </div> 
+
+
     <main>
         <section id="kit">
             <h2>Confira e Adquira nosso KIT!</h2>
             <div class="kit-section">
 
-                <article id="1">
-                    <div class="saiba-mais">
-                        <h3>Clique para saber mais</h3>  
+                <article>
+                    <div class="saiba-mais" >
+                        <h3 onclick="viewImg(1)">Clique para saber mais</h3>  
                     <div class="kit-info">
                         <span>Caneca + Tirante</span>
                         <h1>R$ 35,00</h1>
@@ -225,7 +228,7 @@
 
                 <article id="2">
                     <div class="saiba-mais">
-                    <h3>Clique para saber mais</h3>  
+                    <h3 onclick="viewImg(2)">Clique para saber mais</h3>  
                     <div class="kit-info">
                         <span>Colete</span>
                         <h1>R$ 40,00</h1>
@@ -236,7 +239,7 @@
 
                 <article id="3">
                     <div class="saiba-mais">
-                    <h3>Clique para saber mais</h3>  
+                    <h3 onclick="viewImg(3)">Clique para saber mais</h3>  
                     <div class="kit-info">
                         <span>Bucket</span>
                         <h1>R$ 39,90</h1>
@@ -247,7 +250,7 @@
 
                 <article id="4">
                     <div class="saiba-mais">
-                    <h3>Clique para saber mais</h3>  
+                    <h3 onclick="viewImg(4)">Clique para saber mais</h3>  
                     <div class="kit-info">
                         <span>Caneca + Tirante</span>
                         <h1>R$ 110,00</h1>

@@ -340,6 +340,7 @@ section#kit article, .saiba-mais{
   font-size: 2rem;
   color: transparent;
   border-radius: 12px 12px 2rem 2rem;
+  cursor: pointer;
 }
 
 section#kit article:nth-child(1){ 
@@ -404,14 +405,15 @@ section#kit .kit-info h1 {
   display: grid;
   place-items: center;
   flex-direction: column; 
-  margin-top: 10rem;
   z-index: 100; 
   overflow: hidden;
   display: none;
   visibility: hidden;
+  gap: 1rem;
 }
 
 .view img{
+  margin-top: 5rem;
   width: 60vh;
   border-radius: 1rem;
 }
@@ -419,8 +421,9 @@ section#kit .kit-info h1 {
 .view span{
   position: absolute;
     right: 50px;
-    top: 20px;
+    top: 1px;
     cursor: pointer;
+    font-size: 2rem;
 }
 
 .view button{
