@@ -70,6 +70,8 @@ nav a {
 }
 
 button {
+  margin-top: -1.5rem;
+  margin-right: .5rem;
   font-size: 2rem;
   background-color: transparent;
   border: 0px;
@@ -436,6 +438,35 @@ section#kit .kit-info h1 {
   cursor: pointer;
 }
 
+footer{
+  background: linear-gradient(113.99deg, #EBB703 -6.36%, #A98300 106.77%);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10rem 0rem 0rem 0rem;
+  padding: 5rem 2rem;
+}
+
+footer article{
+  display: grid;
+  place-items: center;
+  flex-direction: column; 
+  width: 33.33%;  
+}
+
+footer img{
+  width: 150px;
+  filter: drop-shadow(0px 4px 19px #ffffffa1);
+}
+
+footer h2{
+  text-align: center;
+}
+ 
+
+footer h1{
+  margin-bottom: 2.5rem;
+}
+
 
 @media screen and (max-width: 1000px) {
 
@@ -490,13 +521,29 @@ section#kit .kit-info h1 {
     width: 40vh;
     border-radius: 1rem;
   }
+
+  footer{
+    display: block; 
+  }
+  
+  footer article{ 
+    width: 100%; 
+    height: auto;
+  } 
+
+footer article{ 
+  margin-top: 5rem;
+  padding-bottom: 1rem;
+  border-bottom: .5px solid #ffffff31;
+}
+
 }
 
 @media screen and (max-width: 600px) {
   button {
     display: block;
     visibility: visible;
-    margin-right: 1rem;
+    margin-right: 1rem; 
   }
 
   .toggle {
