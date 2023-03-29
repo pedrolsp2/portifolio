@@ -117,7 +117,8 @@ label {
     }
 
     .logo-section img {
-        margin-top: -2rem; 
+        margin-top: -2rem;
+        width: 50%;
     }
 
 
