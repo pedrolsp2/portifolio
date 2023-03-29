@@ -26,7 +26,7 @@ section#login {
     max-width: 850px;
     height: 70%;
     border-radius: 12px;
-    box-shadow: 1px 1px 5px 1px #ffffff5d;
+    box-shadow: 1px 1px 5px 1px #0000005d;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -117,8 +117,7 @@ label {
     }
 
     .logo-section img {
-        margin-top: -2rem;
-        width: 50%;
+        margin-top: -2rem; 
     }
 
 
