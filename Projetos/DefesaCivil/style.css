@@ -117,6 +117,10 @@ label {
 
 @media screen and (max-width: 680px) {
 
+    main{
+        height: 100vh;
+        overflow: hidden;
+    }
     .logo-section {
         display: flex;
         justify-content: center;
@@ -126,7 +130,6 @@ label {
         margin-top: -2rem;
         width: 50%;
     }
-
 
     section#login {
         flex-direction: column;
@@ -142,6 +145,10 @@ label {
     section#login article,
     form {
         width: 100%;
+    }
+
+    section#login article:first-child {
+        border-right: 0;
     }
 
     form {
