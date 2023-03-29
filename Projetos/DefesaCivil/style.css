@@ -3,6 +3,7 @@
     --color02: #202258;
 }
 
+
 * {
     margin: 0;
     padding: 0;
@@ -88,6 +89,7 @@ label {
     font-size: 1.1rem;
     margin-bottom: 0.7rem;
     padding: 0.8rem;
+    animation: error 2s 1; 
 }
 
 #button {
@@ -107,7 +109,11 @@ label {
     transition: all 300ms;
 }
 
-
+.alert-error {
+    text-align: center;
+    color: rgb(214, 15, 15);
+    font-weight: bold;
+}
 
 @media screen and (max-width: 680px) {
 
@@ -136,17 +142,17 @@ label {
     section#login article,
     form {
         width: 100%;
-    } 
+    }
 
-    form{
+    form {
         padding: 10px;
     }
-    
-    #button{
+
+    #button {
         margin: 5rem 0rem .5rem 0rem;
     }
-    
-    form h1{
+
+    form h1 {
         margin-bottom: 3rem;
     }
 
@@ -159,4 +165,13 @@ label {
     section#login {
         height: 60%;
     }
+}
+
+@keyframes error {
+    0%{
+        border: .5px solid rgb(241, 48, 48);
+        background-color: rgb(243, 70, 70);
+    }
+    100%{
+    } 
 }
