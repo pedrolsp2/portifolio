@@ -28,7 +28,12 @@ header img{
     width: 30%;
 }
 
-nav{
+#btn-mobilie{
+    display: none;
+    visibility: hidden;
+    transition: all 300ms;
+}
+nav,.my-profile{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,7 +81,7 @@ section#nav h2 {
 }
 
 section#nav a {
-    color: #fff;
+    color: #E4661B;
     text-decoration: none;
     position: relative;
     overflow: hidden;
@@ -92,9 +97,9 @@ section#nav a:after {
     display: block;
     width: 60%;
     height: 2px;
-    background-color: #E4661B;
+    background-color: #fff;
     content: "";
-    border-bottom: 1px solid #E4661B;
+    border-bottom: 1px solid #fff;
     transform: translate3d(-101%, 0, 0);
     transition: transform .3s cubic-bezier(0.11, 0.7, 0, 1);
 }
@@ -103,10 +108,66 @@ section#nav a:hover:after {
     transform: translate3d(0, 0, 0);
 }
 
+.menu-open{
+    transform: translateX(-0px);
+    transition: all 300ms;
+}
+
+.translate{
+    transform: translateX(250px);
+    transition: all 300ms;
+    background-color: #343232 !important;
+    margin-left: -1px !important;
+}
+
 @media screen and (min-width:1400px) {
 
     section#nav {
         margin-top: 6rem;
+    }
+    
+}
+
+@media screen and  (max-width:850px){
+    header{
+        width: 100%;
+        height: 100px;
+        background-color: #343232; 
+        margin: 0;
+    }
+
+    nav{
+        width: 100%;
+        height: 100px;
+        justify-content: space-between; 
+    }
+
+    .my-profile a, .my-profile h3{
+        color: #fff;
+    }
+
+    #btn-mobilie{
+        display: block;
+        visibility: visible;
+        background-color: transparent;
+        margin-left: 10px;
+        border: 0;
+        color: #fff;
+        line-height: 32px;
+        display: flex;  
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+
+    #btn-mobilie::before{
+        content: url(../logo-menu.svg); 
+        margin-right: 10px;
+    }
+
+    aside{
+        transition: all 300ms;
+         transform: translateX(-500px);
     }
     
 }

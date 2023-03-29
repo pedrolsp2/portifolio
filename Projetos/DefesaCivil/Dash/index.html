@@ -11,15 +11,18 @@
 
     <header>
         <nav>
-            <img src="../user.svg" alt="User">
-            <span>
-                <h3>Usuário</h3>
-                <small><a href="">Editar Perfil</a></small>
-            </span>
+            <button id="btn-mobilie">Menu</button>
+                <div class="my-profile">
+                    <img src="../user.svg" alt="User">
+                    <span>
+                        <h3>Usuário</h3>
+                        <small><a href="">Editar Perfil</a></small>
+                    </span>
+                </div>
         </nav>
     </header>
 
-    <aside>
+    <aside id="menu">
         <article id="info">
             <img src="../logo.svg" alt="Logo" id="logo">
             <h2>Defesa Civil</h2>
@@ -35,6 +38,16 @@
             <a href="">Lorem Ipsum</a>
         </section>  
     </aside>
+<script>
 
+    var btnMenu = document.getElementById("btn-mobilie");
+    var menu = document.getElementById('menu');
+
+    btnMenu.addEventListener("click",()=>{ 
+        menu.classList.toggle('menu-open');
+        btnMenu.classList.toggle('translate');
+
+    }) 
+</script>
 </body>
 </html>
