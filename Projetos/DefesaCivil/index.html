@@ -23,7 +23,7 @@
                 </div>
             </article>
                 
-            <form>
+            <form action="submit" onsubmit="handleFormSubmit(event)">
                     <h1>Login</h1>
                         <div class="inputs">
                             <label for="user">Usuário</label>
@@ -39,6 +39,14 @@
                     </form>
         </section>
     </main>
+<script>
+     function handleFormSubmit(event) {
+    event.preventDefault();
+}
 
+    document.getElementById("button").addEventListener('click',()=>{
+        window.location.href = 'Dash/index.html';
+    })
+</script>
 </body>
 </html>
