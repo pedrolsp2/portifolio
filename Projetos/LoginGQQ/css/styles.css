@@ -52,7 +52,13 @@
       padding: 0;
     }
   }
+  
   @media screen and (max-width: 480px) {
+    .focs:focus {
+      zoom: 1.5;
+      transition: transform 0.2s ease-in-out !important;
+    }
+    
     .bt2{
       display: none;
       visibility: hidden;
@@ -622,3 +628,4 @@ backdrop-filter: blur(6.3px);
 #botoes button:hover{
   background-color: #1f8300;
 }
+ 

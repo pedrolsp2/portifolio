@@ -52,26 +52,3 @@ document.addEventListener("keypress", function(e) {
   });
 
 
-
-
-  function Add(){
-    let abc = document.querySelector('.bt');
-    abc.classList.add('subir');
-}
-
-window.onload = function () {
-    var botao = document.getElementById("senha");
-
-        botao.addEventListener("focus", function () {
-            Add();
-        });
-
-        botao.addEventListener("click", function () {
-            Add();
-        });
-
-        botao.onblur = function(){
-        let abc = document.querySelector('.bt');
-        abc.classList.remove('subir');             
-        }
-    } 
