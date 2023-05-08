@@ -626,9 +626,12 @@ backdrop-filter: blur(6.3px);
 }
  
 
-.intSenha{
+@media screen and (max-width: 480px) {
+ .intSenha{
     position: fixed;
     z-index: 3;
     top: 35% !important;
     transition: all 300ms;
-  }
+  } 
+}
+
