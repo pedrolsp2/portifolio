@@ -128,7 +128,7 @@
     display: grid;
     gap: 16px;
     place-items: center;
-    width: 100%;
+    width: 50%;
     margin: 0;
   }
   
@@ -234,11 +234,6 @@ table td:first-child {
   box-sizing: border-box;
 }
 
-html,
-body,
-.wrapper {
-  height: 100%;
-}
 
 body {
   display: grid;
@@ -629,3 +624,11 @@ backdrop-filter: blur(6.3px);
   background-color: #1f8300;
 }
  
+
+@media screen and (max-width: 450px){
+  .login {
+    position: fixed;
+    z-index: 3;
+    top: 35%;
+  }
+}
