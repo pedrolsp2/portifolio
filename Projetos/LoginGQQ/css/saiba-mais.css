@@ -1,0 +1,66 @@
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+h1{
+    font-size: 1.5em;
+}
+
+a,h3,p,li{
+    margin: 1em;
+}
+
+h3{
+    color: #272727;
+}
+
+.icon2{
+    color: #0b7e1a !important;
+}
+
+.icon{
+    color: #fff;
+    font-size: 2em !important;
+    cursor: pointer;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0b7e1a;
+    padding: 1em;
+}
+
+h1,h2{
+    color: #fff;
+}
+
+header img{
+    width: 10% !important;
+    position: absolute;
+    left: 0;
+}
+
+main{
+    width: min(100% - 1em, 60em);
+    margin: 0 auto;
+    padding: 1em;
+    padding-top: 4em;
+}
+
