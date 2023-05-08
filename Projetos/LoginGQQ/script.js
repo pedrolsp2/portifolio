@@ -52,3 +52,14 @@ document.addEventListener("keypress", function(e) {
   });
 
 
+document.querySelector('#senha').addEventListener('focus',()=>{
+    document.querySelector('.login').classList.add('intSenha');
+});
+
+document.querySelector('#senha').addEventListener('blur',()=>{
+    setTimeout(()=>{
+        if(!document.querySelector('#senha:focus')){
+            document.querySelector('.login').classList.remove('intSenha');
+        }
+    }, 0);
+});
