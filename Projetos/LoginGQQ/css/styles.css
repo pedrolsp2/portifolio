@@ -374,7 +374,7 @@ body {
 
 .politica {
   position: fixed;
-  bottom: 0;
+  bottom: 0px;
 background: rgba(255, 255, 255, 0.829);
 border-radius:  16px 16px 0px 0px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -383,6 +383,7 @@ backdrop-filter: blur(6.3px);
   width: 100%;
   height: auto;
   padding: 30px;
+  padding-bottom: 70px !important;
   transition: .8s;
   animation: slideIn .8s;
   animation-delay: .8s;
@@ -399,7 +400,7 @@ backdrop-filter: blur(6.3px);
 }
 
 .checar {
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .checar a {
